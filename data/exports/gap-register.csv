@@ -1,0 +1,46 @@
+Gap ID,Gap within selected corpus,Current evidence / partial coverage,Why it matters,Action to close gap,Priority,Validation evidence required,Sources
+G01,Synchronized packets + independent process truth + operator intent,SWaT offers packet/process pairs behind access restrictions; GRFICS can generate a joint record; other datasets omit parts,A decoded write does not establish the physical consequence or whether it was authorized,"Instrument one canonical simulator with separate state, controller readings, HMI events and exact event labels",Critical,Common timebase; tag map; simulator state; captures; operator/maintenance log; honest truth provenance,"https://github.com/Fortiphyd/GRFICSv3
+https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/
+https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/
+https://github.com/smartgridadsc/IEC61850SecurityDataset"
+G02,Benign rare operations and equipment faults,IEC collection includes legitimate electrical disturbances; conference traffic is not clean operational labeling,"Maintenance, restart, link failure and sensor failure can resemble attacks","Generate labeled startup, shutdown, maintenance, device fault and communication-loss scenarios alongside attacks",High,Same process under benign and malicious cases; documented authorization and outcomes,"https://github.com/smartgridadsc/IEC61850SecurityDataset
+https://www.netresec.com/?page=PCAP4SICS
+https://www.netresec.com/?page=DigitalBond_S4"
+G03,EtherNet/IP explicit messaging versus cyclic I/O,SWaT/WADI document EtherNet/IP but exact release capture mix not decoded; Conpot provides service emulation,Service support alone does not establish authentic cyclic I/O timing or process coupling,Inspect permitted traces and create explicit-message plus cyclic-I/O benchmark scenarios where supported,High,"Decoded services, connection parameters, capture vantage and measured cadence","https://www.sutd.edu.sg/itrust/swat/
+https://www.sutd.edu.sg/itrust/wadi/
+https://conpot.readthedocs.io/en/latest/"
+G04,PROFINET real-time and discovery / alarm traffic,No validated PROFINET packet corpus identified in this selected set; S7comm does not imply PROFINET coverage,Controller application traffic and real-time I/O teach different communication patterns,Add a documented isolated controller / I/O capture or a separately licensed dataset,High,"Layer-2 dissections, topology, update intervals, alarms and benign operational labels","https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf
+https://conpot.readthedocs.io/en/latest/
+https://www.netresec.com/?page=PCAP4SICS"
+G05,DNP3 and IEC 60870-5-104 with physical context,4SICS inventories DNP3 services; Conpot documents IEC 104 emulation; neither establishes rich labeled process truth,Utility event reporting and control sequences require context beyond port discovery,Seek a permitted utility dataset or build a controlled outstation/process simulation,High,"Actual protocol objects/events, synchronized physical state and operator authorization","https://www.netresec.com/?page=PCAP4SICS
+https://conpot.readthedocs.io/en/latest/"
+G06,OPC UA subscriptions and secure modes,OpenPLC lists an OPC UA plugin; HAI uses acquisition through an OPC UA gateway but distributes CSV,"Process data does not expose session, subscription or encrypted-traffic behavior",Generate secure and deliberately transparent lab profiles with known sampling/subscription parameters,High,Pinned security settings; capture visibility limits; publish/sampling rates and application logs,"https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf
+https://github.com/icsdataset/hai"
+G07,IEC 61850 beyond GOOSE,Selected substation corpus establishes GOOSE only,MMS and Sampled Values are different aspects of substation communication,Add separately documented and licensed MMS / Sampled Values material rather than marking the family fully covered,Medium,"Protocol-level proof, IED configuration, process context and rights",https://github.com/smartgridadsc/IEC61850SecurityDataset
+G08,Safety-system track,No dedicated safety-system dataset established among the 12 core families,"Safety logic, safety state and ordinary process control should not be conflated",Maintain as a separate future acquisition / simulation track,Medium,"Safety-specific device/state documentation, synthetic safety cases and controlled permissions","https://github.com/Fortiphyd/GRFICSv3
+https://github.com/Autonomy-Logic/openplc-runtime
+https://github.com/mushorg/conpot
+https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/
+https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/
+https://github.com/icsdataset/hai
+https://github.com/smartgridadsc/IEC61850SecurityDataset
+https://github.com/vgraveto/knx-datasets
+https://www.netresec.com/?page=PCAP4SICS
+https://www.netresec.com/?page=DigitalBond_S4"
+G09,Production-like human and maintenance context,"Most resources expose packets or tags, not complete operator actions, change tickets and maintenance windows",The same protocol-valid action can be permitted or unauthorized depending on context,Author benign and unauthorized variants using identical command types with different context,High,"Operator event ledger, authority/maintenance context, alarm acknowledgements and device state","https://github.com/Fortiphyd/GRFICSv3
+https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/
+https://github.com/icsdataset/hai
+https://www.netresec.com/?page=PCAP4SICS"
+G10,"Release integrity, labels and replay-quality checks","WADI label polarity, KNX response labels, IEC baseline CSV and SWaT edition IDs require special treatment",Bad labels or mismatched releases can make an otherwise polished challenge unsound,"Keep file hashes, schema versions, known issues, label semantics, capture metadata and split manifests",Critical,"File-level manifest, checksums, packet completeness, clocks and reproducible answer key","https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/
+https://github.com/vgraveto/knx-datasets
+https://github.com/smartgridadsc/IEC61850SecurityDataset
+https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/
+https://www.sutd.edu.sg/itrust/itrust-labs/datasets/summary-of-available-datasets/"
+G11,Redistributable corporate event bundle,SWaT/WADI restrict onward sharing; HAI has conflicting notices; IEC and S4x15 lack a confirmed broad grant,Publicly downloadable material cannot automatically be placed on an internal or public event server,Clear rights early; publish only permitted curated datasets and clean self-generated traces,Critical,"Stored license snapshots / grants, attribution bundle and explicit participant access model","https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/
+https://github.com/icsdataset/hai
+https://github.com/smartgridadsc/IEC61850SecurityDataset
+https://www.netresec.com/?page=DigitalBond_S4"
+G12,Modern versus legacy network coverage,4SICS and S4x15 are 2015 lab collections; newer generators support contemporary experiment design,Historical authenticity should not be mistaken for a current production reference architecture,Pair historical exercises with a version-pinned modern synthetic plant and explain differences,Medium,"Architecture version, component inventory and explicit scope of what the scenario represents","https://www.netresec.com/?page=PCAP4SICS
+https://www.netresec.com/?page=DigitalBond_S4
+https://github.com/Fortiphyd/GRFICSv3
+https://github.com/Autonomy-Logic/openplc-runtime"

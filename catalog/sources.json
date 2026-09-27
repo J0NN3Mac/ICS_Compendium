@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "review_scope": "Imported source register from the 2026-09-27 workbook; upstream pages were not revalidated during repository packaging. Verified dates are inherited review dates.",
+  "sources": [
+    {
+      "Source ID": "S01",
+      "Resource": "GRFICSv3",
+      "Source type": "Project README",
+      "Primary URL": "https://github.com/Fortiphyd/GRFICSv3",
+      "Supports / limitations": "Containerized chemical-process lab, components, network layout and setup; documentation, not a runtime test.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S02",
+      "Resource": "GRFICSv3",
+      "Source type": "Modbus device configuration",
+      "Primary URL": "https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/plc/mbconfig.cfg",
+      "Supports / limitations": "Six simulated process devices; Modbus TCP port 502; configured polling period 100 ms, not measured timing.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S03",
+      "Resource": "GRFICSv3",
+      "Source type": "Compose configuration",
+      "Primary URL": "https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/docker-compose.yml",
+      "Supports / limitations": "Services, segmentation and exposed ports. Exposed ports are not proof of active protocol traffic.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S04",
+      "Resource": "GRFICSv3",
+      "Source type": "Repository license",
+      "Primary URL": "https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/LICENSE",
+      "Supports / limitations": "GNU General Public License version 3; check bundled components separately.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S05",
+      "Resource": "OpenPLC",
+      "Source type": "Runtime v4 README",
+      "Primary URL": "https://github.com/Autonomy-Logic/openplc-runtime",
+      "Supports / limitations": "Standalone headless runtime v4; do not conflate with the legacy runtime bundled in other projects.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S06",
+      "Resource": "OpenPLC",
+      "Source type": "Plugin manifest",
+      "Primary URL": "https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf",
+      "Supports / limitations": "Modbus master/slave, OPC UA, S7comm and EtherCAT plugin entries; configuration support, not inspected wire traffic.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S07",
+      "Resource": "OpenPLC",
+      "Source type": "Runtime license",
+      "Primary URL": "https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/LICENSE",
+      "Supports / limitations": "MIT license for this runtime repository; other versions, editor and dependencies may differ.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S08",
+      "Resource": "Conpot",
+      "Source type": "Project README",
+      "Primary URL": "https://github.com/mushorg/conpot",
+      "Supports / limitations": "Industrial endpoint honeypot; templates and deployment. Not a physics simulator.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S09",
+      "Resource": "Conpot",
+      "Source type": "Protocol documentation",
+      "Primary URL": "https://conpot.readthedocs.io/en/latest/",
+      "Supports / limitations": "Protocol implementations are template-dependent; no claim of full vendor stack fidelity.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S10",
+      "Resource": "Conpot",
+      "Source type": "Repository license",
+      "Primary URL": "https://raw.githubusercontent.com/mushorg/conpot/main/LICENSE.txt",
+      "Supports / limitations": "GNU General Public License version 2; source license does not automatically license all captured content.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S11",
+      "Resource": "SWaT",
+      "Source type": "Dataset characteristics",
+      "Primary URL": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/",
+      "Supports / limitations": "Edition-specific network/process data and attack descriptions; A6 explicitly provides PCAP and historian CSV.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S12",
+      "Resource": "SWaT",
+      "Source type": "Physical testbed",
+      "Primary URL": "https://www.sutd.edu.sg/itrust/swat/",
+      "Supports / limitations": "Six-stage physical plant, devices, diagrams and EtherNet/IP architecture.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S13",
+      "Resource": "WADI",
+      "Source type": "Dataset characteristics",
+      "Primary URL": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/",
+      "Supports / limitations": "A1/A2 process data; A3 December 2023 synchronized PCAP and historian data without attacks.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S14",
+      "Resource": "WADI",
+      "Source type": "Physical testbed",
+      "Primary URL": "https://www.sutd.edu.sg/itrust/wadi/",
+      "Supports / limitations": "Water distribution plant, industrial controllers, remote units, gateways, EtherNet/IP and Modbus architecture.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S15",
+      "Resource": "SWaT / WADI",
+      "Source type": "iTrust dataset terms",
+      "Primary URL": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/",
+      "Supports / limitations": "No private or public onward sharing; credit, publication notification and requester disclosure requirements.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S16",
+      "Resource": "SWaT / WADI",
+      "Source type": "Release summary",
+      "Primary URL": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/summary-of-available-datasets/",
+      "Supports / limitations": "Additional SWaT 2026 releases listed; December 2023 SWaT identifier conflicts with characteristics page.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S17",
+      "Resource": "HAI / HAIEnd",
+      "Source type": "Dataset README and metadata",
+      "Primary URL": "https://github.com/icsdataset/hai",
+      "Supports / limitations": "CSV time series, hardware-in-the-loop testbed, labels, versions, graphs; CC BY-SA 4.0 prose versus CC BY 4.0 metadata.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S18",
+      "Resource": "IEC 61850",
+      "Source type": "Dataset README and file tree",
+      "Primary URL": "https://github.com/smartgridadsc/IEC61850SecurityDataset",
+      "Supports / limitations": "Synthesized GOOSE PCAPNG, per-device CSV and configuration; attack CSV reuses baseline. No explicit license found in reviewed tree.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S19",
+      "Resource": "KNX",
+      "Source type": "Dataset README",
+      "Primary URL": "https://github.com/vgraveto/knx-datasets",
+      "Supports / limitations": "Real-home KNX bus captures and contextual CSV; captured attacks merged into baseline with modified times; Target label includes responses.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S20",
+      "Resource": "KNX",
+      "Source type": "Repository license",
+      "Primary URL": "https://raw.githubusercontent.com/vgraveto/knx-datasets/main/LICENSE",
+      "Supports / limitations": "MIT license. External mirrors/package terms must be checked separately.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S21",
+      "Resource": "4SICS",
+      "Source type": "Host download / attribution page",
+      "Primary URL": "https://www.netresec.com/?page=PCAP4SICS",
+      "Supports / limitations": "Three 2015 lab PCAPs, inventory and layout; credit CS3Sthlm and link Netresec for redistribution or training.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S22",
+      "Resource": "S4x15",
+      "Source type": "Host download page",
+      "Primary URL": "https://www.netresec.com/?page=DigitalBond_S4",
+      "Supports / limitations": "Eight 2015 CTF PCAPs and network diagram. Hosting permission is described, but broad downstream redistribution grant not found.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S23",
+      "Resource": "NIST SP 800-82",
+      "Source type": "Revision 3 final",
+      "Primary URL": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "Supports / limitations": "Stable final Operational Technology security guidance; not a packet dataset.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S24",
+      "Resource": "NIST SP 800-82",
+      "Source type": "Revision 4 initial public draft",
+      "Primary URL": "https://csrc.nist.gov/pubs/sp/800/82/r4/ipd",
+      "Supports / limitations": "Draft released September 21, 2026; track separately from final guidance.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S25",
+      "Resource": "NIST",
+      "Source type": "Publication reuse policy",
+      "Primary URL": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+      "Supports / limitations": "Technical-publication reuse policy; attribution and third-party material exceptions.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S26",
+      "Resource": "MITRE ATT&CK for ICS",
+      "Source type": "ICS matrix",
+      "Primary URL": "https://attack.mitre.org/matrices/ics/",
+      "Supports / limitations": "Behavior taxonomy and scenario mapping; not packet or process observations.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S27",
+      "Resource": "MITRE ATT&CK",
+      "Source type": "Structured data repository",
+      "Primary URL": "https://github.com/mitre-attack/attack-stix-data",
+      "Supports / limitations": "STIX 2.1 collections; version-pinned machine-readable knowledge base.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S28",
+      "Resource": "MITRE ATT&CK",
+      "Source type": "Data license",
+      "Primary URL": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/LICENSE.txt",
+      "Supports / limitations": "Research, development and commercial reuse permitted subject to notices and license.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S29",
+      "Resource": "MITRE ATT&CK",
+      "Source type": "Versions",
+      "Primary URL": "https://attack.mitre.org/resources/versions/",
+      "Supports / limitations": "Current website version 19.2 at review; pin the exact ICS data release for an event.",
+      "Verified": "2026-09-27"
+    },
+    {
+      "Source ID": "S30",
+      "Resource": "MITRE ATT&CK",
+      "Source type": "Legal and branding",
+      "Primary URL": "https://attack.mitre.org/resources/legal-and-branding/",
+      "Supports / limitations": "Attribution and trademark guidance; do not imply endorsement.",
+      "Verified": "2026-09-27"
+    }
+  ]
+}

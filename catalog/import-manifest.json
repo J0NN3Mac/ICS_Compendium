@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "import_date": "2026-09-27",
+  "destination_repository": "https://github.com/J0NN3Mac/ICS_Compendium",
+  "remote_status": {
+    "repository_read_result": "404 Not Found",
+    "accessible_owner_repository_list": [],
+    "existing_tree_inspected": false,
+    "commit_created_remotely": false,
+    "pushed": false,
+    "pull_request_created": false
+  },
+  "import_scope": "Reformat existing research artifacts and preserve user-nominated seed addresses; no new upstream audit, dataset download, license grant or runtime test.",
+  "snapshot_files": [
+    {
+      "path": "data/snapshots/SCADA_Master_Dataset_Matrix_2026-09-27.xlsx",
+      "sha256": "81019d52ce0cf3c9dd1a548989ec31d80124db8dfe4628df87e52692cdc192d5",
+      "size_bytes": 50794,
+      "role": "unchanged prior-turn research snapshot"
+    },
+    {
+      "path": "data/snapshots/SCADA_Master_Dataset_Matrix_2026-09-27.csv",
+      "sha256": "3ba13a231205cf38e36ff62bcc20924b2c3892db598e9001e5c1beb52595d0fa",
+      "size_bytes": 17114,
+      "role": "unchanged prior-turn research snapshot"
+    }
+  ],
+  "expected_resource_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12"
+  ],
+  "expected_source_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S25",
+    "S26",
+    "S27",
+    "S28",
+    "S29",
+    "S30"
+  ],
+  "expected_seed_ids": [
+    "SEED01",
+    "SEED02",
+    "SEED03",
+    "SEED04",
+    "SEED05",
+    "SEED06",
+    "SEED07",
+    "SEED08",
+    "SEED09",
+    "SEED10"
+  ]
+}

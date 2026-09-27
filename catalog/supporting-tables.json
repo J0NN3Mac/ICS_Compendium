@@ -1,0 +1,1022 @@
+{
+  "schema_version": "1.0",
+  "provenance": "Imported supporting worksheets; assessment wording and caveats preserved.",
+  "tables": {
+    "Protocol Coverage": [
+      {
+        "ID": "R01",
+        "Resource": "GRFICSv3",
+        "Modbus": "Configured",
+        "CIP / EtherNet/IP": "—",
+        "S7comm": "—",
+        "PROFINET": "—",
+        "DNP3": "Bundled only",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "Configured Modbus process path. Bundled DNP3 configuration does not establish active traffic.",
+        "Sources": "https://github.com/Fortiphyd/GRFICSv3\nhttps://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/plc/mbconfig.cfg\nhttps://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/docker-compose.yml"
+      },
+      {
+        "ID": "R02",
+        "Resource": "OpenPLC v4",
+        "Modbus": "Plugin",
+        "CIP / EtherNet/IP": "—",
+        "S7comm": "Plugin",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "Plugin",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "—",
+        "EtherCAT": "Plugin",
+        "Interpretation": "Plugin entries are capabilities to configure and validate; no capture supplied.",
+        "Sources": "https://github.com/Autonomy-Logic/openplc-runtime\nhttps://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf"
+      },
+      {
+        "ID": "R03",
+        "Resource": "Conpot",
+        "Modbus": "Emulated",
+        "CIP / EtherNet/IP": "Emulated",
+        "S7comm": "Emulated",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "Emulated",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "Emulated",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "Template-dependent endpoint service implementations; not full industrial or cyclic-process fidelity.",
+        "Sources": "https://github.com/mushorg/conpot\nhttps://conpot.readthedocs.io/en/latest/"
+      },
+      {
+        "ID": "R04",
+        "Resource": "SWaT",
+        "Modbus": "—",
+        "CIP / EtherNet/IP": "Lab",
+        "S7comm": "—",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "Owner lab architecture establishes EtherNet/IP; decode the exact permitted release to confirm packet mix.",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/swat/"
+      },
+      {
+        "ID": "R05",
+        "Resource": "WADI",
+        "Modbus": "Lab",
+        "CIP / EtherNet/IP": "Lab",
+        "S7comm": "—",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "Lab protocols; raw captures confirmed for attack-free December 2023 release, not automatically A1/A2.",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/\nhttps://www.sutd.edu.sg/itrust/wadi/"
+      },
+      {
+        "ID": "R06",
+        "Resource": "HAI / HAIEnd",
+        "Modbus": "—",
+        "CIP / EtherNet/IP": "—",
+        "S7comm": "—",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "Acquisition",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "Gateway acquisition uses OPC UA, but published CSV is not OPC UA packet evidence.",
+        "Sources": "https://github.com/icsdataset/hai"
+      },
+      {
+        "ID": "R07",
+        "Resource": "IEC61850SecurityDataset",
+        "Modbus": "—",
+        "CIP / EtherNet/IP": "—",
+        "S7comm": "—",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "Dataset",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "GOOSE explicitly documented in PCAPNG. No claim of full IEC 61850 stack coverage.",
+        "Sources": "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+      },
+      {
+        "ID": "R08",
+        "Resource": "KNX contextual dataset",
+        "Modbus": "—",
+        "CIP / EtherNet/IP": "—",
+        "S7comm": "—",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "Dataset",
+        "EtherCAT": "—",
+        "Interpretation": "Twisted-pair bus telegrams; inspect link type before treating as Ethernet KNXnet/IP.",
+        "Sources": "https://github.com/vgraveto/knx-datasets"
+      },
+      {
+        "ID": "R09",
+        "Resource": "4SICS",
+        "Modbus": "Candidate",
+        "CIP / EtherNet/IP": "—",
+        "S7comm": "Candidate",
+        "PROFINET": "—",
+        "DNP3": "Candidate",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "—",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "Candidate services from inventory/ports, not a decoded packet-protocol inventory.",
+        "Sources": "https://www.netresec.com/?page=PCAP4SICS"
+      },
+      {
+        "ID": "R10",
+        "Resource": "S4x15",
+        "Modbus": "Unverified",
+        "CIP / EtherNet/IP": "Unverified",
+        "S7comm": "—",
+        "PROFINET": "—",
+        "DNP3": "—",
+        "IEC 60870-5-104": "—",
+        "OPC UA": "—",
+        "IEC 61850 GOOSE": "—",
+        "IEC 61850 MMS": "—",
+        "IEC 61850 Sampled Values": "—",
+        "BACnet": "Named file",
+        "KNX": "—",
+        "EtherCAT": "—",
+        "Interpretation": "BACnet capture names are explicit. Do not infer PLC wire protocols from vendor names alone.",
+        "Sources": "https://www.netresec.com/?page=DigitalBond_S4"
+      },
+      {
+        "ID": "R11",
+        "Resource": "NIST SP 800-82",
+        "Modbus": "Reference",
+        "CIP / EtherNet/IP": "Reference",
+        "S7comm": "Reference",
+        "PROFINET": "Reference",
+        "DNP3": "Reference",
+        "IEC 60870-5-104": "Reference",
+        "OPC UA": "Reference",
+        "IEC 61850 GOOSE": "Reference",
+        "IEC 61850 MMS": "Reference",
+        "IEC 61850 Sampled Values": "Reference",
+        "BACnet": "Reference",
+        "KNX": "Reference",
+        "EtherCAT": "Reference",
+        "Interpretation": "Reference means architectural/protocol context only; this row contributes no packet coverage.",
+        "Sources": "https://csrc.nist.gov/pubs/sp/800/82/r3/final\nhttps://csrc.nist.gov/pubs/sp/800/82/r4/ipd"
+      },
+      {
+        "ID": "R12",
+        "Resource": "MITRE ATT&CK for ICS",
+        "Modbus": "Reference",
+        "CIP / EtherNet/IP": "Reference",
+        "S7comm": "Reference",
+        "PROFINET": "Reference",
+        "DNP3": "Reference",
+        "IEC 60870-5-104": "Reference",
+        "OPC UA": "Reference",
+        "IEC 61850 GOOSE": "Reference",
+        "IEC 61850 MMS": "Reference",
+        "IEC 61850 Sampled Values": "Reference",
+        "BACnet": "Reference",
+        "KNX": "Reference",
+        "EtherCAT": "Reference",
+        "Interpretation": "Taxonomy does not constitute protocol traffic, implementation support or observed event labels.",
+        "Sources": "https://attack.mitre.org/matrices/ics/\nhttps://github.com/mitre-attack/attack-stix-data"
+      }
+    ],
+    "Rights & Access": [
+      {
+        "ID": "R01",
+        "Resource": "GRFICSv3",
+        "License / stated terms": "GNU General Public License version 3 (GPL-3.0)",
+        "Internal event sharing": "Software use / sharing subject to applicable licenses; clean self-generated outputs need separate review",
+        "Public redistribution": "Software distribution must satisfy applicable source/notice obligations; capture-output rights are not automatic",
+        "Attribution / obligations": "Preserve software notices; assess source obligations and third-party components",
+        "What the license covers": "Repository software, not every dependency, image or item recorded in a capture",
+        "Clearance gate": "Own-output review",
+        "Required next action": "Pin source and images; generate clean scenarios; establish an explicit license for authored output",
+        "Sources": "https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/LICENSE\nhttps://github.com/Fortiphyd/GRFICSv3"
+      },
+      {
+        "ID": "R02",
+        "Resource": "OpenPLC Runtime v4",
+        "License / stated terms": "MIT license",
+        "Internal event sharing": "Runtime permitted under license; check other components",
+        "Public redistribution": "Runtime redistribution permitted with copyright and license notice",
+        "Attribution / obligations": "Retain copyright and permission notice in copies / substantial portions",
+        "What the license covers": "This runtime repository, not all historic OpenPLC releases or external components",
+        "Clearance gate": "Own-output review",
+        "Required next action": "Freeze exact version; check editor/plugins; publish only clean authored traces",
+        "Sources": "https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/LICENSE\nhttps://github.com/Autonomy-Logic/openplc-runtime"
+      },
+      {
+        "ID": "R03",
+        "Resource": "Conpot",
+        "License / stated terms": "GNU General Public License version 2 (GPL-2.0)",
+        "Internal event sharing": "Software use under license; recordings require content/privacy review",
+        "Public redistribution": "Software distribution subject to license; do not assume capture contents inherit GPL",
+        "Attribution / obligations": "Preserve notices and satisfy relevant source obligations",
+        "What the license covers": "Repository software; external templates/dependencies and recorded content need review",
+        "Clearance gate": "Own-output review",
+        "Required next action": "Use isolated authorized interactions; inventory redistributed dependencies",
+        "Sources": "https://raw.githubusercontent.com/mushorg/conpot/main/LICENSE.txt\nhttps://github.com/mushorg/conpot"
+      },
+      {
+        "ID": "R04",
+        "Resource": "SWaT",
+        "License / stated terms": "Custom iTrust dataset terms",
+        "Internal event sharing": "Do not share privately with additional participants without authorization",
+        "Public redistribution": "Do not share publicly",
+        "Attribution / obligations": "Credit iTrust; notify publication; requester/organization/date disclosure; further users request separately",
+        "What the license covers": "Requested dataset release",
+        "Clearance gate": "Permission required",
+        "Required next action": "Obtain written event/team permission before uploading to an internal challenge server",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/"
+      },
+      {
+        "ID": "R05",
+        "Resource": "WADI",
+        "License / stated terms": "Custom iTrust dataset terms",
+        "Internal event sharing": "Do not share privately with additional participants without authorization",
+        "Public redistribution": "Do not share publicly",
+        "Attribution / obligations": "Same iTrust credit, notification, requester and access obligations",
+        "What the license covers": "Requested dataset release",
+        "Clearance gate": "Permission required",
+        "Required next action": "Request exact release and event-specific sharing scope; do not redistribute through our bundle",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/"
+      },
+      {
+        "ID": "R06",
+        "Resource": "HAI / HAIEnd",
+        "License / stated terms": "License prose: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0); metadata: Creative Commons Attribution 4.0 (CC BY 4.0)",
+        "Internal event sharing": "Not marked automatically cleared while governing notice conflicts",
+        "Public redistribution": "Clarify governing version and adaptation obligations before redistributing",
+        "Attribution / obligations": "Attribution under both stated licenses; ShareAlike is an additional obligation under one",
+        "What the license covers": "Dataset; conflict is between notices in the same source",
+        "Clearance gate": "License clarification",
+        "Required next action": "Obtain maintainer clarification and retain it with frozen release; do not silently choose the more permissive notice",
+        "Sources": "https://github.com/icsdataset/hai"
+      },
+      {
+        "ID": "R07",
+        "Resource": "IEC61850SecurityDataset",
+        "License / stated terms": "No explicit license found in reviewed tree",
+        "Internal event sharing": "Download availability alone does not establish permission to share with participants",
+        "Public redistribution": "Do not assume permission",
+        "Attribution / obligations": "Author requests scholarly citation; citation does not substitute for a reuse grant",
+        "What the license covers": "README download/citation statements, not a confirmed redistribution license",
+        "Clearance gate": "Permission required",
+        "Required next action": "Ask owner for corporate training / derivative / redistribution permission",
+        "Sources": "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+      },
+      {
+        "ID": "R08",
+        "Resource": "KNX contextual dataset",
+        "License / stated terms": "MIT repository license",
+        "Internal event sharing": "Permitted under repository license, with notice and privacy review",
+        "Public redistribution": "Permitted under repository license; verify external mirror terms if used",
+        "Attribution / obligations": "Retain copyright and permission notice",
+        "What the license covers": "Material covered by repository license; external DataPort package terms not separately audited",
+        "Clearance gate": "Attribution / review",
+        "Required next action": "Use repository version; retain notices; inspect residential privacy and embedded data",
+        "Sources": "https://raw.githubusercontent.com/vgraveto/knx-datasets/main/LICENSE\nhttps://github.com/vgraveto/knx-datasets"
+      },
+      {
+        "ID": "R09",
+        "Resource": "4SICS",
+        "License / stated terms": "Custom host statement contemplates redistribution and training",
+        "Internal event sharing": "Training use contemplated with specified attribution",
+        "Public redistribution": "Redistribution contemplated with credit / backlink; not a broad SPDX software license",
+        "Attribution / obligations": "Credit CS3Sthlm and link the Netresec source page",
+        "What the license covers": "Hosted 4SICS capture collection per page statement",
+        "Clearance gate": "Attribution / review",
+        "Required next action": "Preserve exact host statement and notices; screen captures; ask owner if planned use extends beyond statement",
+        "Sources": "https://www.netresec.com/?page=PCAP4SICS"
+      },
+      {
+        "ID": "R10",
+        "Resource": "S4x15",
+        "License / stated terms": "Host obtained permission to publish; downstream grant not established",
+        "Internal event sharing": "Corporate repackaging / sharing requires clarification",
+        "Public redistribution": "Not established by host's publication permission",
+        "Attribution / obligations": "Preserve original attribution; obtain an explicit reuse grant",
+        "What the license covers": "Evidence of Netresec hosting authorization, not necessarily our onward-sharing rights",
+        "Clearance gate": "Permission required",
+        "Required next action": "Contact original organizers / owner for the proposed event and distribution model",
+        "Sources": "https://www.netresec.com/?page=DigitalBond_S4"
+      },
+      {
+        "ID": "R11",
+        "Resource": "NIST SP 800-82",
+        "License / stated terms": "NIST technical-series publication reuse policy",
+        "Internal event sharing": "Generally reusable; inspect third-party credits",
+        "Public redistribution": "NIST-authored material reusable under policy; third-party exceptions remain",
+        "Attribution / obligations": "Use recommended citation; do not imply endorsement; inspect credited third-party graphics",
+        "What the license covers": "NIST-authored technical publication material, subject to the stated policy",
+        "Clearance gate": "Reference reuse",
+        "Required next action": "Cite Revision 3 final; clearly identify Revision 4 draft; preserve exceptions",
+        "Sources": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications\nhttps://csrc.nist.gov/pubs/sp/800/82/r3/final\nhttps://csrc.nist.gov/pubs/sp/800/82/r4/ipd"
+      },
+      {
+        "ID": "R12",
+        "Resource": "MITRE ATT&CK for ICS",
+        "License / stated terms": "MITRE custom license allows research, development and commercial use",
+        "Internal event sharing": "Permitted subject to license / notice obligations",
+        "Public redistribution": "Permitted subject to license / notice obligations",
+        "Attribution / obligations": "Include copyright and license with copies; respect trademark / branding and no endorsement",
+        "What the license covers": "ATT&CK data covered by the stated license",
+        "Clearance gate": "Reference reuse",
+        "Required next action": "Pin ICS STIX collection and license; record version and attribution",
+        "Sources": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/LICENSE.txt\nhttps://attack.mitre.org/resources/legal-and-branding/\nhttps://attack.mitre.org/resources/versions/"
+      }
+    ],
+    "Release Notes": [
+      {
+        "Resource": "GRFICSv3",
+        "Release / edition": "Current default branch, not commit-pinned",
+        "Data / event content": "Containerized chemical-process environment",
+        "PCAP status": "Generate",
+        "Critical handling note": "Bundled PLC is not automatically standalone OpenPLC v4. Configured 100 ms polling is not a measured capture property",
+        "Freeze recommendation": "Pin repository commit, image digests, controller logic, seed and capture vantage",
+        "Sources": "https://github.com/Fortiphyd/GRFICSv3\nhttps://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/plc/mbconfig.cfg\nhttps://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/docker-compose.yml"
+      },
+      {
+        "Resource": "OpenPLC",
+        "Release / edition": "Standalone runtime v4",
+        "Data / event content": "Headless runtime; plugin-oriented protocol support",
+        "PCAP status": "Generate",
+        "Critical handling note": "Version 4 has a different architecture and MIT runtime license; legacy docs may refer to another runtime",
+        "Freeze recommendation": "Record runtime, editor and plugin versions separately",
+        "Sources": "https://github.com/Autonomy-Logic/openplc-runtime\nhttps://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf\nhttps://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/LICENSE"
+      },
+      {
+        "Resource": "SWaT",
+        "Release / edition": "A1 / A2: December 2015 collection and normal-file update",
+        "Data / event content": "Normal + attacked process/network data; later normal-file edit removes an initial tank-drain segment",
+        "PCAP status": "Network data described; inspect exact distributed files",
+        "Critical handling note": "Retain version information: deleting a benign startup/drain segment changes the definition of normal",
+        "Freeze recommendation": "Use exact file version; validate labels and event count from accompanying release documentation",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/"
+      },
+      {
+        "Resource": "SWaT",
+        "Release / edition": "A6: December 2019",
+        "Data / event content": "PCAP and historian CSV; three normal hours, one attack hour and six described attacks",
+        "PCAP status": "Explicitly available by request",
+        "Critical handling note": "Good candidate for manageable integrated exercises, subject to no-sharing terms",
+        "Freeze recommendation": "Request written event permission and exact file manifest before selection",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/"
+      },
+      {
+        "Resource": "SWaT + WADI",
+        "Release / edition": "December 18–22, 2023 joint collection",
+        "Data / event content": "105 hours: five closed-loop and 100 crossover; no attacks",
+        "PCAP status": "Both provide PCAP + historian",
+        "Critical handling note": "Approximately 429 GB SWaT + 335 GB WADI; derived network-flow data incomplete",
+        "Freeze recommendation": "Select synchronized excerpts and preserve start/end timestamps and source-file IDs",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/"
+      },
+      {
+        "Resource": "SWaT",
+        "Release / edition": "December 2023 identifier discrepancy",
+        "Data / event content": "Characteristics page uses A9; summary lists A10 for this acquisition",
+        "PCAP status": "Date-based collection known; edition ID unresolved",
+        "Critical handling note": "Do not silently choose an ID or combine unrelated November 2022 / December 2023 files",
+        "Freeze recommendation": "Resolve edition ID with owner; refer to acquisition dates meanwhile",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/summary-of-available-datasets/"
+      },
+      {
+        "Resource": "SWaT",
+        "Release / edition": "A11 February 2026; A12 March 2026",
+        "Data / event content": "Listed in owner summary; detailed contents not established in reviewed characteristics page",
+        "PCAP status": "Unverified",
+        "Critical handling note": "Do not assume attacked traffic, protocols, tags or PCAP formats from older releases",
+        "Freeze recommendation": "Treat as discovery entries until release-specific documentation and permission obtained",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/summary-of-available-datasets/"
+      },
+      {
+        "Resource": "WADI",
+        "Release / edition": "A1: October 2017",
+        "Data / event content": "Fourteen normal days, two attacked days, 123 sensor/actuator channels and 15 attacks",
+        "PCAP status": "Not confirmed in distributed A1 package",
+        "Critical handling note": "Physical CSV is useful but not evidence of an available attacked PCAP",
+        "Freeze recommendation": "Obtain complete release manifest before assigning a packet-analysis challenge",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/"
+      },
+      {
+        "Resource": "WADI",
+        "Release / edition": "A2: corrected 2017-data release",
+        "Data / event content": "Normal values filtered; attack dates corrected; -1 denotes attack and +1 denotes normal",
+        "PCAP status": "Not confirmed",
+        "Critical handling note": "Label polarity differs from common 0/1 schemas; preserve a documented conversion",
+        "Freeze recommendation": "Normalize labels explicitly; preserve original label column separately",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/"
+      },
+      {
+        "Resource": "WADI",
+        "Release / edition": "A3: December 2023",
+        "Data / event content": "Attack-free PCAP + historian; part of synchronized joint SWaT/WADI run",
+        "PCAP status": "Explicitly available by request",
+        "Critical handling note": "Do not attach 2017 attack labels to these 2023 traces",
+        "Freeze recommendation": "Use as normal baseline / cross-system modeling, not as attacked network ground truth",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/"
+      },
+      {
+        "Resource": "HAI",
+        "Release / edition": "20.07 and 21.03",
+        "Data / event content": "Process time series; release-dependent signal set and process/global attack flags",
+        "PCAP status": "None described",
+        "Critical handling note": "Time continuity applies within a CSV file, not automatically across all files",
+        "Freeze recommendation": "Keep file/run boundaries; choose a single version for a benchmark",
+        "Sources": "https://github.com/icsdataset/hai"
+      },
+      {
+        "Resource": "HAI",
+        "Release / edition": "22.04",
+        "Data / event content": "Process time series; per-process attack flags removed",
+        "PCAP status": "None described",
+        "Critical handling note": "Use global flag and provided attack-target context; download actual Git LFS objects",
+        "Freeze recommendation": "Check schema and label availability before writing loaders",
+        "Sources": "https://github.com/icsdataset/hai"
+      },
+      {
+        "Resource": "HAI / HAIEnd",
+        "Release / edition": "23.05",
+        "Data / event content": "Paired process and internal boiler-control values from the same experiments",
+        "PCAP status": "None described",
+        "Critical handling note": "Simultaneous collection improves context, not raw packet coverage; license notices conflict",
+        "Freeze recommendation": "Align by verified timestamps and run IDs; resolve license before redistribution",
+        "Sources": "https://github.com/icsdataset/hai"
+      },
+      {
+        "Resource": "IEC61850SecurityDataset",
+        "Release / edition": "Published synthesized substation scenarios",
+        "Data / event content": "Normal, legitimate disturbances and attack PCAPNG; per-device CSV and configuration",
+        "PCAP status": "Provided",
+        "Critical handling note": "Attack CSV is reused normal baseline, not post-attack measured response",
+        "Freeze recommendation": "Retain scenario/frame annotations and clearly label truth limitations",
+        "Sources": "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+      },
+      {
+        "Resource": "KNX",
+        "Release / edition": "2020 baseline + merged attack sessions",
+        "Data / event content": "Real-home bus captures plus enriched metadata",
+        "PCAP status": "Provided",
+        "Critical handling note": "Attack-session timestamps modified for insertion; Target includes system responses",
+        "Freeze recommendation": "Preserve original ordering/context and document label semantics",
+        "Sources": "https://github.com/vgraveto/knx-datasets"
+      },
+      {
+        "Resource": "4SICS",
+        "Release / edition": "October 20–22, 2015",
+        "Data / event content": "Three heterogeneous conference-lab captures",
+        "PCAP status": "Provided",
+        "Critical handling note": "Mixed testing/attack activity; no assertion that a whole file is benign",
+        "Freeze recommendation": "Curate short explained segments after protocol, privacy and timing validation",
+        "Sources": "https://www.netresec.com/?page=PCAP4SICS"
+      },
+      {
+        "Resource": "S4x15",
+        "Release / edition": "January 2015",
+        "Data / event content": "Eight per-device / host capture files",
+        "PCAP status": "Provided",
+        "Critical handling note": "Cross-file timeline and duplicate traffic require inspection; no complete label set established",
+        "Freeze recommendation": "Resolve rights, inspect clocks/capture vantage, then author an event key",
+        "Sources": "https://www.netresec.com/?page=DigitalBond_S4"
+      },
+      {
+        "Resource": "NIST SP 800-82",
+        "Release / edition": "Revision 3 final; Revision 4 initial public draft",
+        "Data / event content": "Final guidance plus September 21, 2026 draft",
+        "PCAP status": "Not applicable",
+        "Critical handling note": "Draft is not final. Comment deadline listed as November 30, 2026",
+        "Freeze recommendation": "Baseline on Revision 3; track draft additions separately",
+        "Sources": "https://csrc.nist.gov/pubs/sp/800/82/r3/final\nhttps://csrc.nist.gov/pubs/sp/800/82/r4/ipd"
+      },
+      {
+        "Resource": "MITRE ATT&CK",
+        "Release / edition": "Website version 19.2 at review",
+        "Data / event content": "Versioned ICS knowledge-base collection",
+        "PCAP status": "Not applicable",
+        "Critical handling note": "Technique identifiers / definitions can change; website version does not substitute for file hash",
+        "Freeze recommendation": "Pin exact STIX bundle, collection version, date and hash",
+        "Sources": "https://github.com/mitre-attack/attack-stix-data\nhttps://attack.mitre.org/resources/versions/"
+      }
+    ],
+    "Build Plan": [
+      {
+        "Phase": "1 — curate",
+        "Resources": "KNX",
+        "Track / learning objective": "Contextual protocol analysis",
+        "Participant level": "Intermediate",
+        "Organizer effort": "Intermediate",
+        "Proposed exercise": "Decode telegram values and distinguish abnormal commands from their downstream system responses",
+        "Required inputs / preparation": "PCAP/CSV alignment, engineering dictionary, Target semantics, notices, privacy screening and answer key",
+        "Release gate": "Confirm link type; retain MIT notice; document reconstructed chronology",
+        "Sources / rationale": "https://github.com/vgraveto/knx-datasets\nhttps://raw.githubusercontent.com/vgraveto/knx-datasets/main/LICENSE"
+      },
+      {
+        "Phase": "1 — curate",
+        "Resources": "4SICS",
+        "Track / learning objective": "Asset discovery and mixed-traffic triage",
+        "Participant level": "Beginner–intermediate",
+        "Organizer effort": "Intermediate",
+        "Proposed exercise": "Build an asset inventory from a short trace and identify evidence of unusual communication",
+        "Required inputs / preparation": "Decode protocol inventory; select coherent excerpt; document capture vantage; author labels; preserve credit",
+        "Release gate": "Do not call the complete conference trace benign; meet host attribution statement",
+        "Sources / rationale": "https://www.netresec.com/?page=PCAP4SICS"
+      },
+      {
+        "Phase": "1 — build",
+        "Resources": "GRFICSv3",
+        "Track / learning objective": "Integrated packet / process causality",
+        "Participant level": "Intermediate",
+        "Organizer effort": "Advanced",
+        "Proposed exercise": "Explain a simulated setpoint change using a request, controller state, evolving process values and an alarm",
+        "Required inputs / preparation": "Pinned simulator, isolated network, controller logic, tag map, process-state export, PCAP and synchronized event oracle",
+        "Release gate": "Functional and realism validation; own-output rights review; no connection to real OT",
+        "Sources / rationale": "https://github.com/Fortiphyd/GRFICSv3\nhttps://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/plc/mbconfig.cfg\nhttps://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/docker-compose.yml\nhttps://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/LICENSE"
+      },
+      {
+        "Phase": "2 — build",
+        "Resources": "OpenPLC v4",
+        "Track / learning objective": "Controller and protocol developer track",
+        "Participant level": "Intermediate",
+        "Organizer effort": "Advanced",
+        "Proposed exercise": "Build a read-only client / telemetry exporter and verify command-versus-measurement distinctions",
+        "Required inputs / preparation": "Pinned runtime/plugin, supplied process model, client, tag map and integration tests",
+        "Release gate": "Validate actual selected plugin behavior; separate component and captured-output licenses",
+        "Sources / rationale": "https://github.com/Autonomy-Logic/openplc-runtime\nhttps://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf\nhttps://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/LICENSE"
+      },
+      {
+        "Phase": "2 — build",
+        "Resources": "Conpot",
+        "Track / learning objective": "Service discovery and protocol parsers",
+        "Participant level": "Beginner–intermediate",
+        "Organizer effort": "Intermediate",
+        "Proposed exercise": "Classify industrial endpoint services and compare service emulation with a real process-backed device",
+        "Required inputs / preparation": "Chosen templates, authorized client interactions, local capture, emulator-fidelity notes",
+        "Release gate": "Do not present a honeypot as a physically coherent plant",
+        "Sources / rationale": "https://github.com/mushorg/conpot\nhttps://conpot.readthedocs.io/en/latest/\nhttps://raw.githubusercontent.com/mushorg/conpot/main/LICENSE.txt"
+      },
+      {
+        "Phase": "2 — conditional",
+        "Resources": "HAI / HAIEnd",
+        "Track / learning objective": "Time-series anomaly detection",
+        "Participant level": "Intermediate–advanced",
+        "Organizer effort": "Intermediate",
+        "Proposed exercise": "Detect an event and explain which coupled variables changed before and after the labeled interval",
+        "Required inputs / preparation": "One release, explicit train/test time boundaries, hidden test labels, event-aware scoring and signal dictionary",
+        "Release gate": "Resolve conflicting license notices; do not add invented packets or random-row train/test leakage",
+        "Sources / rationale": "https://github.com/icsdataset/hai"
+      },
+      {
+        "Phase": "2 — conditional",
+        "Resources": "SWaT A6",
+        "Track / learning objective": "Industrial incident reconstruction",
+        "Participant level": "Intermediate–advanced",
+        "Organizer effort": "Intermediate–advanced",
+        "Proposed exercise": "Correlate an authorized excerpt of packet activity with historian behavior and documented incident times",
+        "Required inputs / preparation": "Written team/event permission, exact release files, capture-point/timebase check, tag dictionary and answer key",
+        "Release gate": "No private/public onward sharing without authorization",
+        "Sources / rationale": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/"
+      },
+      {
+        "Phase": "3 — conditional",
+        "Resources": "WADI A3 / joint December 2023",
+        "Track / learning objective": "Normal baselines and coupled plants",
+        "Participant level": "Advanced",
+        "Organizer effort": "Advanced",
+        "Proposed exercise": "Model normal process/network relationships between treatment and distribution",
+        "Required inputs / preparation": "Permission, selected synchronized subset, storage plan, timing checks and known sensor-quality caveats",
+        "Release gate": "No attack labels for this release; never attach A1 attack events to A3 packets",
+        "Sources / rationale": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/"
+      },
+      {
+        "Phase": "3 — conditional",
+        "Resources": "IEC61850SecurityDataset",
+        "Track / learning objective": "Electrical protection / disturbance triage",
+        "Participant level": "Intermediate–advanced",
+        "Organizer effort": "Intermediate",
+        "Proposed exercise": "Distinguish a legitimate electrical disturbance from inconsistent GOOSE state/event behavior",
+        "Required inputs / preparation": "Owner permission, substation diagram, IED configuration, frame/time annotations and separate truth-status fields",
+        "Release gate": "Do not claim attack CSV proves physical attack effects",
+        "Sources / rationale": "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+      },
+      {
+        "Phase": "3 — conditional",
+        "Resources": "S4x15",
+        "Track / learning objective": "Historical multi-host CTF reconstruction",
+        "Participant level": "Intermediate",
+        "Organizer effort": "Intermediate–advanced",
+        "Proposed exercise": "Reconstruct relationships among controller, HMI and workstation captures",
+        "Required inputs / preparation": "Owner rights clarification, cross-file timestamp/deduplication checks and instructor-curated event key",
+        "Release gate": "Hosting permission is not automatically downstream redistribution permission",
+        "Sources / rationale": "https://www.netresec.com/?page=DigitalBond_S4"
+      },
+      {
+        "Phase": "All phases",
+        "Resources": "NIST + MITRE",
+        "Track / learning objective": "Architecture, evidence and scenario vocabulary",
+        "Participant level": "Foundational–advanced",
+        "Organizer effort": "Low–intermediate",
+        "Proposed exercise": "Explain the operational impact and attach supported technique mappings to evidence",
+        "Required inputs / preparation": "Revision 3 baseline, clearly labeled draft notes, pinned ATT&CK collection, notices and scoring rubric",
+        "Release gate": "A technique mapping is not a proof that an event occurred",
+        "Sources / rationale": "https://csrc.nist.gov/pubs/sp/800/82/r3/final\nhttps://csrc.nist.gov/pubs/sp/800/82/r4/ipd\nhttps://attack.mitre.org/matrices/ics/\nhttps://github.com/mitre-attack/attack-stix-data\nhttps://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/LICENSE.txt"
+      }
+    ],
+    "Gap Register": [
+      {
+        "Gap ID": "G01",
+        "Gap within selected corpus": "Synchronized packets + independent process truth + operator intent",
+        "Current evidence / partial coverage": "SWaT offers packet/process pairs behind access restrictions; GRFICS can generate a joint record; other datasets omit parts",
+        "Why it matters": "A decoded write does not establish the physical consequence or whether it was authorized",
+        "Action to close gap": "Instrument one canonical simulator with separate state, controller readings, HMI events and exact event labels",
+        "Priority": "Critical",
+        "Validation evidence required": "Common timebase; tag map; simulator state; captures; operator/maintenance log; honest truth provenance",
+        "Sources": "https://github.com/Fortiphyd/GRFICSv3\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/\nhttps://github.com/smartgridadsc/IEC61850SecurityDataset"
+      },
+      {
+        "Gap ID": "G02",
+        "Gap within selected corpus": "Benign rare operations and equipment faults",
+        "Current evidence / partial coverage": "IEC collection includes legitimate electrical disturbances; conference traffic is not clean operational labeling",
+        "Why it matters": "Maintenance, restart, link failure and sensor failure can resemble attacks",
+        "Action to close gap": "Generate labeled startup, shutdown, maintenance, device fault and communication-loss scenarios alongside attacks",
+        "Priority": "High",
+        "Validation evidence required": "Same process under benign and malicious cases; documented authorization and outcomes",
+        "Sources": "https://github.com/smartgridadsc/IEC61850SecurityDataset\nhttps://www.netresec.com/?page=PCAP4SICS\nhttps://www.netresec.com/?page=DigitalBond_S4"
+      },
+      {
+        "Gap ID": "G03",
+        "Gap within selected corpus": "EtherNet/IP explicit messaging versus cyclic I/O",
+        "Current evidence / partial coverage": "SWaT/WADI document EtherNet/IP but exact release capture mix not decoded; Conpot provides service emulation",
+        "Why it matters": "Service support alone does not establish authentic cyclic I/O timing or process coupling",
+        "Action to close gap": "Inspect permitted traces and create explicit-message plus cyclic-I/O benchmark scenarios where supported",
+        "Priority": "High",
+        "Validation evidence required": "Decoded services, connection parameters, capture vantage and measured cadence",
+        "Sources": "https://www.sutd.edu.sg/itrust/swat/\nhttps://www.sutd.edu.sg/itrust/wadi/\nhttps://conpot.readthedocs.io/en/latest/"
+      },
+      {
+        "Gap ID": "G04",
+        "Gap within selected corpus": "PROFINET real-time and discovery / alarm traffic",
+        "Current evidence / partial coverage": "No validated PROFINET packet corpus identified in this selected set; S7comm does not imply PROFINET coverage",
+        "Why it matters": "Controller application traffic and real-time I/O teach different communication patterns",
+        "Action to close gap": "Add a documented isolated controller / I/O capture or a separately licensed dataset",
+        "Priority": "High",
+        "Validation evidence required": "Layer-2 dissections, topology, update intervals, alarms and benign operational labels",
+        "Sources": "https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf\nhttps://conpot.readthedocs.io/en/latest/\nhttps://www.netresec.com/?page=PCAP4SICS"
+      },
+      {
+        "Gap ID": "G05",
+        "Gap within selected corpus": "DNP3 and IEC 60870-5-104 with physical context",
+        "Current evidence / partial coverage": "4SICS inventories DNP3 services; Conpot documents IEC 104 emulation; neither establishes rich labeled process truth",
+        "Why it matters": "Utility event reporting and control sequences require context beyond port discovery",
+        "Action to close gap": "Seek a permitted utility dataset or build a controlled outstation/process simulation",
+        "Priority": "High",
+        "Validation evidence required": "Actual protocol objects/events, synchronized physical state and operator authorization",
+        "Sources": "https://www.netresec.com/?page=PCAP4SICS\nhttps://conpot.readthedocs.io/en/latest/"
+      },
+      {
+        "Gap ID": "G06",
+        "Gap within selected corpus": "OPC UA subscriptions and secure modes",
+        "Current evidence / partial coverage": "OpenPLC lists an OPC UA plugin; HAI uses acquisition through an OPC UA gateway but distributes CSV",
+        "Why it matters": "Process data does not expose session, subscription or encrypted-traffic behavior",
+        "Action to close gap": "Generate secure and deliberately transparent lab profiles with known sampling/subscription parameters",
+        "Priority": "High",
+        "Validation evidence required": "Pinned security settings; capture visibility limits; publish/sampling rates and application logs",
+        "Sources": "https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf\nhttps://github.com/icsdataset/hai"
+      },
+      {
+        "Gap ID": "G07",
+        "Gap within selected corpus": "IEC 61850 beyond GOOSE",
+        "Current evidence / partial coverage": "Selected substation corpus establishes GOOSE only",
+        "Why it matters": "MMS and Sampled Values are different aspects of substation communication",
+        "Action to close gap": "Add separately documented and licensed MMS / Sampled Values material rather than marking the family fully covered",
+        "Priority": "Medium",
+        "Validation evidence required": "Protocol-level proof, IED configuration, process context and rights",
+        "Sources": "https://github.com/smartgridadsc/IEC61850SecurityDataset"
+      },
+      {
+        "Gap ID": "G08",
+        "Gap within selected corpus": "Safety-system track",
+        "Current evidence / partial coverage": "No dedicated safety-system dataset established among the 12 core families",
+        "Why it matters": "Safety logic, safety state and ordinary process control should not be conflated",
+        "Action to close gap": "Maintain as a separate future acquisition / simulation track",
+        "Priority": "Medium",
+        "Validation evidence required": "Safety-specific device/state documentation, synthetic safety cases and controlled permissions",
+        "Sources": "https://github.com/Fortiphyd/GRFICSv3\nhttps://github.com/Autonomy-Logic/openplc-runtime\nhttps://github.com/mushorg/conpot\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/\nhttps://github.com/icsdataset/hai\nhttps://github.com/smartgridadsc/IEC61850SecurityDataset\nhttps://github.com/vgraveto/knx-datasets\nhttps://www.netresec.com/?page=PCAP4SICS\nhttps://www.netresec.com/?page=DigitalBond_S4"
+      },
+      {
+        "Gap ID": "G09",
+        "Gap within selected corpus": "Production-like human and maintenance context",
+        "Current evidence / partial coverage": "Most resources expose packets or tags, not complete operator actions, change tickets and maintenance windows",
+        "Why it matters": "The same protocol-valid action can be permitted or unauthorized depending on context",
+        "Action to close gap": "Author benign and unauthorized variants using identical command types with different context",
+        "Priority": "High",
+        "Validation evidence required": "Operator event ledger, authority/maintenance context, alarm acknowledgements and device state",
+        "Sources": "https://github.com/Fortiphyd/GRFICSv3\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://github.com/icsdataset/hai\nhttps://www.netresec.com/?page=PCAP4SICS"
+      },
+      {
+        "Gap ID": "G10",
+        "Gap within selected corpus": "Release integrity, labels and replay-quality checks",
+        "Current evidence / partial coverage": "WADI label polarity, KNX response labels, IEC baseline CSV and SWaT edition IDs require special treatment",
+        "Why it matters": "Bad labels or mismatched releases can make an otherwise polished challenge unsound",
+        "Action to close gap": "Keep file hashes, schema versions, known issues, label semantics, capture metadata and split manifests",
+        "Priority": "Critical",
+        "Validation evidence required": "File-level manifest, checksums, packet completeness, clocks and reproducible answer key",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/\nhttps://github.com/vgraveto/knx-datasets\nhttps://github.com/smartgridadsc/IEC61850SecurityDataset\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/\nhttps://www.sutd.edu.sg/itrust/itrust-labs/datasets/summary-of-available-datasets/"
+      },
+      {
+        "Gap ID": "G11",
+        "Gap within selected corpus": "Redistributable corporate event bundle",
+        "Current evidence / partial coverage": "SWaT/WADI restrict onward sharing; HAI has conflicting notices; IEC and S4x15 lack a confirmed broad grant",
+        "Why it matters": "Publicly downloadable material cannot automatically be placed on an internal or public event server",
+        "Action to close gap": "Clear rights early; publish only permitted curated datasets and clean self-generated traces",
+        "Priority": "Critical",
+        "Validation evidence required": "Stored license snapshots / grants, attribution bundle and explicit participant access model",
+        "Sources": "https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/\nhttps://github.com/icsdataset/hai\nhttps://github.com/smartgridadsc/IEC61850SecurityDataset\nhttps://www.netresec.com/?page=DigitalBond_S4"
+      },
+      {
+        "Gap ID": "G12",
+        "Gap within selected corpus": "Modern versus legacy network coverage",
+        "Current evidence / partial coverage": "4SICS and S4x15 are 2015 lab collections; newer generators support contemporary experiment design",
+        "Why it matters": "Historical authenticity should not be mistaken for a current production reference architecture",
+        "Action to close gap": "Pair historical exercises with a version-pinned modern synthetic plant and explain differences",
+        "Priority": "Medium",
+        "Validation evidence required": "Architecture version, component inventory and explicit scope of what the scenario represents",
+        "Sources": "https://www.netresec.com/?page=PCAP4SICS\nhttps://www.netresec.com/?page=DigitalBond_S4\nhttps://github.com/Fortiphyd/GRFICSv3\nhttps://github.com/Autonomy-Logic/openplc-runtime"
+      }
+    ],
+    "Glossary": [
+      {
+        "Term": "Supervisory Control and Data Acquisition",
+        "Shorthand / category": "SCADA",
+        "Meaning / handling rule": "Supervisory monitoring and control; not necessarily the controller's local control loop."
+      },
+      {
+        "Term": "Industrial Control System",
+        "Shorthand / category": "ICS",
+        "Meaning / handling rule": "Control systems used to monitor or operate industrial processes."
+      },
+      {
+        "Term": "Operational Technology",
+        "Shorthand / category": "OT",
+        "Meaning / handling rule": "Systems interacting with physical processes; not synonymous with ordinary enterprise networking."
+      },
+      {
+        "Term": "Packet capture",
+        "Shorthand / category": "PCAP",
+        "Meaning / handling rule": "Captured packets. PCAPNG means PCAP Next Generation container format."
+      },
+      {
+        "Term": "Programmable Logic Controller",
+        "Shorthand / category": "PLC",
+        "Meaning / handling rule": "Controller executing control logic; not automatically a complete process simulator."
+      },
+      {
+        "Term": "Human-Machine Interface",
+        "Shorthand / category": "HMI",
+        "Meaning / handling rule": "Operator interface for status, alarms and permitted commands."
+      },
+      {
+        "Term": "Remote Terminal Unit",
+        "Shorthand / category": "RTU",
+        "Meaning / handling rule": "Remote telemetry/control device."
+      },
+      {
+        "Term": "Input/Output",
+        "Shorthand / category": "I/O",
+        "Meaning / handling rule": "Signals linking controller logic to sensors and actuators."
+      },
+      {
+        "Term": "Distributed Control System",
+        "Shorthand / category": "DCS",
+        "Meaning / handling rule": "Industrial control platform; distinct from raw packet data."
+      },
+      {
+        "Term": "Intelligent Electronic Device",
+        "Shorthand / category": "IED",
+        "Meaning / handling rule": "Protection/control device, commonly in electrical systems."
+      },
+      {
+        "Term": "Hardware-in-the-Loop",
+        "Shorthand / category": "HIL",
+        "Meaning / handling rule": "Real control hardware coupled to a simulated process or system."
+      },
+      {
+        "Term": "Capture-the-Flag",
+        "Shorthand / category": "CTF",
+        "Meaning / handling rule": "Challenge format; the presence of CTF traffic does not provide complete labels."
+      },
+      {
+        "Term": "Transmission Control Protocol",
+        "Shorthand / category": "TCP",
+        "Meaning / handling rule": "Transport used by Modbus TCP and other applications."
+      },
+      {
+        "Term": "Internet Protocol",
+        "Shorthand / category": "IP",
+        "Meaning / handling rule": "Network-layer protocol; some industrial traffic is non-IP Ethernet or fieldbus."
+      },
+      {
+        "Term": "Common Industrial Protocol",
+        "Shorthand / category": "CIP",
+        "Meaning / handling rule": "Industrial application protocol used over EtherNet/IP; explicit and implicit traffic are not interchangeable."
+      },
+      {
+        "Term": "Open Platform Communications Unified Architecture",
+        "Shorthand / category": "OPC UA",
+        "Meaning / handling rule": "Industrial information and service framework; gateway-acquired CSV is not a packet trace."
+      },
+      {
+        "Term": "Distributed Network Protocol 3",
+        "Shorthand / category": "DNP3",
+        "Meaning / handling rule": "Utility-oriented telemetry and control protocol."
+      },
+      {
+        "Term": "International Electrotechnical Commission",
+        "Shorthand / category": "IEC",
+        "Meaning / handling rule": "Standards body; relevant families include IEC 60870-5-104 and IEC 61850."
+      },
+      {
+        "Term": "Generic Object Oriented Substation Event",
+        "Shorthand / category": "GOOSE",
+        "Meaning / handling rule": "IEC 61850 event messaging present in the selected substation dataset."
+      },
+      {
+        "Term": "Manufacturing Message Specification",
+        "Shorthand / category": "MMS",
+        "Meaning / handling rule": "A separate substation communication component; not confirmed by GOOSE-only coverage."
+      },
+      {
+        "Term": "Building Automation and Control Networks",
+        "Shorthand / category": "BACnet",
+        "Meaning / handling rule": "Building-automation protocol family."
+      },
+      {
+        "Term": "PROFINET",
+        "Shorthand / category": "PROFINET",
+        "Meaning / handling rule": "Industrial Ethernet protocol family; do not infer coverage from Siemens S7comm."
+      },
+      {
+        "Term": "KNX",
+        "Shorthand / category": "KNX",
+        "Meaning / handling rule": "Building-control standard / brand; the selected capture describes twisted-pair bus telegrams."
+      },
+      {
+        "Term": "Ethernet for Control Automation Technology",
+        "Shorthand / category": "EtherCAT",
+        "Meaning / handling rule": "Industrial Ethernet fieldbus; listed OpenPLC plugin is not an existing labeled corpus."
+      },
+      {
+        "Term": "Comma-separated values",
+        "Shorthand / category": "CSV",
+        "Meaning / handling rule": "Tabular values; may contain sensor data or packet-derived features, not necessarily original packets."
+      },
+      {
+        "Term": "Structured Threat Information Expression",
+        "Shorthand / category": "STIX",
+        "Meaning / handling rule": "Machine-readable knowledge format; ATT&CK provides STIX 2.1 collections."
+      },
+      {
+        "Term": "National Institute of Standards and Technology / Special Publication",
+        "Shorthand / category": "NIST / SP",
+        "Meaning / handling rule": "NIST SP 800-82 is guidance, not a packet dataset."
+      },
+      {
+        "Term": "Adversarial Tactics, Techniques, and Common Knowledge",
+        "Shorthand / category": "ATT&CK",
+        "Meaning / handling rule": "MITRE behavior knowledge base; mapping requires evidence."
+      },
+      {
+        "Term": "GNU General Public License",
+        "Shorthand / category": "GPL",
+        "Meaning / handling rule": "Software copyleft license; inspect version and obligations for each component."
+      },
+      {
+        "Term": "Creative Commons Attribution / Attribution-ShareAlike",
+        "Shorthand / category": "CC BY / CC BY-SA",
+        "Meaning / handling rule": "Different content-license obligations; HAI lists conflicting notices."
+      },
+      {
+        "Term": "MIT license",
+        "Shorthand / category": "MIT",
+        "Meaning / handling rule": "Permissive software/content license notice; retain copyright and permission text."
+      },
+      {
+        "Term": "Git Large File Storage",
+        "Shorthand / category": "Git LFS",
+        "Meaning / handling rule": "Mechanism used by newer HAI releases to retrieve actual large files."
+      },
+      {
+        "Term": "Physical-process ground truth",
+        "Shorthand / category": "Definition",
+        "Meaning / handling rule": "Measured or simulated process state with provenance. A potentially manipulated sensor value is not an independent oracle."
+      },
+      {
+        "Term": "Network realism",
+        "Shorthand / category": "Assessment",
+        "Meaning / handling rule": "Qualitative judgment of actual device traffic, implemented protocol behavior and emulation limitations; no numerical benchmark score."
+      },
+      {
+        "Term": "Process realism",
+        "Shorthand / category": "Assessment",
+        "Meaning / handling rule": "Distinguish real laboratory process, HIL-augmented process, simulation, baseline values and absent physical context."
+      },
+      {
+        "Term": "Participant difficulty",
+        "Shorthand / category": "Assessment",
+        "Meaning / handling rule": "Beginner: guided discovery; intermediate: protocol/context analysis; advanced: multi-stream causal analysis and modeling."
+      },
+      {
+        "Term": "Organizer effort",
+        "Shorthand / category": "Assessment",
+        "Meaning / handling rule": "Low: reference preparation; intermediate: data/label curation; advanced: integration, instrumentation or large synchronized releases. Not a time estimate."
+      },
+      {
+        "Term": "Suitability",
+        "Shorthand / category": "Assessment",
+        "Meaning / handling rule": "Proposed learning role based on documented strengths and limitations, not a tested event-readiness certification."
+      },
+      {
+        "Term": "Configured / Plugin / Emulated",
+        "Shorthand / category": "Protocol legend",
+        "Meaning / handling rule": "Documented generator behavior or capability; must be run and captured before claiming active wire coverage."
+      },
+      {
+        "Term": "Lab / Acquisition",
+        "Shorthand / category": "Protocol legend",
+        "Meaning / handling rule": "Protocol in the documented testbed or collection path; does not prove it is in a distributed PCAP."
+      },
+      {
+        "Term": "Dataset / Named file",
+        "Shorthand / category": "Protocol legend",
+        "Meaning / handling rule": "Owner explicitly describes protocol traces / uses a protocol-specific filename. Binary QA remains outstanding."
+      },
+      {
+        "Term": "Candidate / Unverified / Bundled only",
+        "Shorthand / category": "Protocol legend",
+        "Meaning / handling rule": "Discovery or configuration evidence only; do not count as validated protocol coverage."
+      },
+      {
+        "Term": "Reference / —",
+        "Shorthand / category": "Protocol legend",
+        "Meaning / handling rule": "Reference contributes no packet coverage. Dash means not established in this review, not proof of absence."
+      },
+      {
+        "Term": "Verification scope",
+        "Shorthand / category": "Review boundary",
+        "Meaning / handling rule": "Primary documentation, license and configuration review only. No full PCAP archive audit, runtime benchmark or permission request was performed."
+      }
+    ]
+  }
+}

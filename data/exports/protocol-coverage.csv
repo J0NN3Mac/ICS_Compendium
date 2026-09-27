@@ -1,0 +1,21 @@
+ID,Resource,Modbus,CIP / EtherNet/IP,S7comm,PROFINET,DNP3,IEC 60870-5-104,OPC UA,IEC 61850 GOOSE,IEC 61850 MMS,IEC 61850 Sampled Values,BACnet,KNX,EtherCAT,Interpretation,Sources
+R01,GRFICSv3,Configured,—,—,—,Bundled only,—,—,—,—,—,—,—,—,Configured Modbus process path. Bundled DNP3 configuration does not establish active traffic.,"https://github.com/Fortiphyd/GRFICSv3
+https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/plc/mbconfig.cfg
+https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/docker-compose.yml"
+R02,OpenPLC v4,Plugin,—,Plugin,—,—,—,Plugin,—,—,—,—,—,Plugin,Plugin entries are capabilities to configure and validate; no capture supplied.,"https://github.com/Autonomy-Logic/openplc-runtime
+https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf"
+R03,Conpot,Emulated,Emulated,Emulated,—,—,Emulated,—,—,—,—,Emulated,—,—,Template-dependent endpoint service implementations; not full industrial or cyclic-process fidelity.,"https://github.com/mushorg/conpot
+https://conpot.readthedocs.io/en/latest/"
+R04,SWaT,—,Lab,—,—,—,—,—,—,—,—,—,—,—,Owner lab architecture establishes EtherNet/IP; decode the exact permitted release to confirm packet mix.,"https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/
+https://www.sutd.edu.sg/itrust/swat/"
+R05,WADI,Lab,Lab,—,—,—,—,—,—,—,—,—,—,—,"Lab protocols; raw captures confirmed for attack-free December 2023 release, not automatically A1/A2.","https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/
+https://www.sutd.edu.sg/itrust/wadi/"
+R06,HAI / HAIEnd,—,—,—,—,—,—,Acquisition,—,—,—,—,—,—,"Gateway acquisition uses OPC UA, but published CSV is not OPC UA packet evidence.",https://github.com/icsdataset/hai
+R07,IEC61850SecurityDataset,—,—,—,—,—,—,—,Dataset,—,—,—,—,—,GOOSE explicitly documented in PCAPNG. No claim of full IEC 61850 stack coverage.,https://github.com/smartgridadsc/IEC61850SecurityDataset
+R08,KNX contextual dataset,—,—,—,—,—,—,—,—,—,—,—,Dataset,—,Twisted-pair bus telegrams; inspect link type before treating as Ethernet KNXnet/IP.,https://github.com/vgraveto/knx-datasets
+R09,4SICS,Candidate,—,Candidate,—,Candidate,—,—,—,—,—,—,—,—,"Candidate services from inventory/ports, not a decoded packet-protocol inventory.",https://www.netresec.com/?page=PCAP4SICS
+R10,S4x15,Unverified,Unverified,—,—,—,—,—,—,—,—,Named file,—,—,BACnet capture names are explicit. Do not infer PLC wire protocols from vendor names alone.,https://www.netresec.com/?page=DigitalBond_S4
+R11,NIST SP 800-82,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference means architectural/protocol context only; this row contributes no packet coverage.,"https://csrc.nist.gov/pubs/sp/800/82/r3/final
+https://csrc.nist.gov/pubs/sp/800/82/r4/ipd"
+R12,MITRE ATT&CK for ICS,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,Reference,"Taxonomy does not constitute protocol traffic, implementation support or observed event labels.","https://attack.mitre.org/matrices/ics/
+https://github.com/mitre-attack/attack-stix-data"
