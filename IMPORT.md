@@ -1,6 +1,6 @@
 # Importing the bootstrap package
 
-**Status:** imported onto review branch `bootstrap/compendium-foundation` on 2026-09-27 after inspecting the live repository (default branch `main`, initial README only). The original preparation note below is retained as import history.
+**Status:** imported onto review branch `bootstrap/compendium-foundation` on 2026-09-27 after inspecting the live repository (default branch `main`, initial README only). Published as commit `8dc5a3e` and [pull request #1](https://github.com/J0NN3Mac/ICS_Compendium/pull/1). The original preparation note below is retained as import history.
 
 The repository lookup for `J0NN3Mac/ICS_Compendium` returned `404 Not Found`. The connected account listed no accessible repositories under that owner. These observations do not distinguish a private/inaccessible repository from a missing or mistyped repository. Available GitHub actions in this session were read-only.
 
