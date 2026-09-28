@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 J0NN3Mac and contributors.
+# SPDX-License-Identifier: Apache-2.0
+# See LICENSES/Apache-2.0.txt and NOTICE in the repository root.
 """Revalidate the capture download register with live HTTP checks.
 
 Fetches only the first 16 bytes of each address (HTTP Range), then compares status, total size
