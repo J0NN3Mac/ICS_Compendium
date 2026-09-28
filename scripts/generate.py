@@ -104,6 +104,34 @@ def outputs(root: Path) -> dict[str, str]:
                     text+='Sources: '+', '.join(f'[source {n}]({u})' for n,u in enumerate(str(row[key]).splitlines(),1))+'\n\n'
         result[f'docs/reference/{slug}.md']=text
         result[f'data/exports/{slug}.csv']=csv_text(rows)
+    captures = load(root, 'capture-downloads.json')
+    caps = captures['captures']
+    by_res = {r['resource_id']: r for r in resources}
+    text = '# Capture download register\n\n' + generated
+    text += ('Direct addresses of the packet-capture files and capture archives that the catalogued resources publish. '
+             'Each address was located from the resource\'s own landing page or repository tree and checked with a ranged '
+             'HTTP GET of the first 16 bytes or by full download: the recorded status, total size and detected format come from that check. Archive entries (zip, 7z) and gzip-wrapped files must be unpacked to obtain captures. '
+             'No capture is stored in this repository; see [DATA_POLICY.md](../../DATA_POLICY.md). Rerun `python3 scripts/check_links.py` '
+             'to revalidate. A working link is not a redistribution permission: apply the gate in [rights and access](rights-and-access.md) '
+             'before sharing any file onward.\n\n')
+    text += f"**Provenance:** {captures['provenance']}\n\n"
+    summary=[{'ID':rid,'Resource':f"[{by_res[rid]['matrix_fields']['Resource / scope']}](../resources/{by_res[rid]['slug']}.md)",
+              'Files':sum(1 for c in caps if c['resource_id']==rid),
+              'Total size (MB)':f"{sum(c['size_bytes'] for c in caps if c['resource_id']==rid)/1e6:.1f}",
+              'Redistribution gate':by_res[rid]['matrix_fields']['Redistribution gate'],
+              'Landing page':f"[open]({next(c['landing_page'] for c in caps if c['resource_id']==rid)})"}
+             for rid in by_res if any(c['resource_id']==rid for c in caps)]
+    text += '## Summary by resource\n\n' + table(summary) + '\n'
+    for rid in [row['ID'] for row in summary]:
+        r = by_res[rid]
+        text += f"## {rid} — {r['matrix_fields']['Resource / scope']}\n\n"
+        text += f"Host: {next(c['host'] for c in caps if c['resource_id']==rid)}. Rights: [rights and access](rights-and-access.md) entry {rid}.\n\n"
+        rows=[{'Capture ID':c['capture_id'],'File':f"[{c['file']}]({c['download_url']})",'Group / scenario':c['group'],
+               'Size (bytes)':f"{c['size_bytes']:,}",'Format':c['detected_format'],'HTTP':c['http_status'],
+               'Checked':c['checked'],'Note':c['note']} for c in caps if c['resource_id']==rid]
+        text += table(rows) + '\n'
+    result['docs/reference/capture-downloads.md'] = text
+    result['data/exports/capture-downloads.csv'] = csv_text(caps)
     text='# Primary-source register\n\n'+generated+boundary
     for row in sources:
         text+=f"## {row['Source ID']}\n\n**Resource:** {row['Resource']}  \n**Source type:** {row['Source type']}  \n**Inherited review date:** {row['Verified']}\n\n"
