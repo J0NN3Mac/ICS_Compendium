@@ -1,5 +1,9 @@
 # Change log
 
+## 2026-09-28 — capture download register added
+
+Added `catalog/capture-downloads.json`: 41 direct addresses for the packet captures published by 4SICS (R09, 3 files), S4x15 (R10, 8 files), IEC61850SecurityDataset (R07, 14 files) and the KNX contextual dataset (R08, 16 files). Every address was checked on 2026-09-28 with a ranged HTTP GET of the first 16 bytes; status, total size and the capture magic number were recorded. Observed: four S4x15 files named `.pcap` are pcapng inside. Generated `docs/reference/capture-downloads.md` and `data/exports/capture-downloads.csv`; extended `validate.py` with structural checks for the register; added `scripts/check_links.py` for live revalidation; added four unit tests. No capture file is stored in the repository and no redistribution permission is implied by a working address.
+
 ## 2026-09-28 — content and software licensing
 
 Adopted CC BY-SA 4.0 for original educational content and catalog material, and Apache 2.0 for original software, as authorized by the project owner. Added full standard license texts, explicit scope, J0NN3Mac attribution, software NOTICE, author credit, third-party exclusions, directory notices, and contribution terms. Replaced the bootstrap's pending-license guidance.

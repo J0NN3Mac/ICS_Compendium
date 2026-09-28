@@ -20,6 +20,7 @@ A curated resource for **Industrial Control System (ICS)** and **Supervisory Con
 | Build exercises | [Build plan](docs/reference/build-plan.md) and [scenario template](templates/scenario.md) |
 | Prioritize missing coverage | [Gap register](docs/reference/gap-register.md) and [roadmap](docs/roadmap.md) |
 | Locate original research | [Primary sources](docs/reference/sources.md) and [user-nominated seeds](docs/reference/seed-sources.md) |
+| Download published captures | [Capture download register](docs/reference/capture-downloads.md) (41 verified addresses; rights gates still apply) |
 | Understand terms | [Glossary](docs/reference/glossary.md) |
 | Import this package | [Import guide](IMPORT.md) |
 
@@ -27,7 +28,7 @@ A curated resource for **Industrial Control System (ICS)** and **Supervisory Con
 
 Twelve resource families: **seven dataset/capture collections, three scenario-generation platforms, and two reference frameworks**. The catalog preserves all 25 original comparison fields, 30 primary-source records, ten user-nominated seed sources, twelve gaps, release-specific warnings, and proposed exercise tracks.
 
-This is a **metadata and training-design collection**, not a mirror of third-party datasets. No third-party packet captures, restricted time series, virtual-machine images, or malware files are bundled. Availability, protocol evidence, process truth, and redistribution clearance remain separate questions.
+This is a **metadata and training-design collection**, not a mirror of third-party datasets. The [capture download register](docs/reference/capture-downloads.md) records verified direct addresses for the 41 published capture files across four resources, with size and format as observed on the check date; the files themselves stay with their hosts. No third-party packet captures, restricted time series, virtual-machine images, or malware files are bundled. Availability, protocol evidence, process truth, and redistribution clearance remain separate questions.
 
 ## Source of truth
 
