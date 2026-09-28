@@ -1,3 +1,6 @@
+# Copyright (c) 2026 J0NN3Mac and contributors.
+# SPDX-License-Identifier: Apache-2.0
+# See LICENSES/Apache-2.0.txt and NOTICE in the repository root.
 """Regression tests for local structural safeguards, not upstream factual verification."""
 from pathlib import Path
 import json

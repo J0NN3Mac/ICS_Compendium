@@ -26,3 +26,11 @@ These checks do not prove upstream facts, privacy clearance, packet fidelity or 
 ## Changes to original workbook fields
 
 The `matrix_fields` object preserves the 25-column baseline. Make intentional semantic changes there, keep resource/category identifiers consistent, and explain any changed review scope. Rebuild derived views. Keep original wording visible in the archived research snapshot; do not replace the original snapshot to disguise a correction.
+
+## Rights and contribution terms
+
+By intentionally submitting an original contribution for inclusion, you offer it under the applicable license in [LICENSE.md](LICENSE.md): CC BY-SA 4.0 for educational content and catalog material, or Apache 2.0 for software. You retain ownership of your contribution; no copyright assignment is required.
+
+Submit only work you own or are authorized to license, including any required employer approval. Identify third-party material, its provenance, governing terms, and modifications rather than representing it as original work. Preserve applicable credits and update [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for any permitted inclusion.
+
+Do not modify the standard legal texts to add attribution, noncommercial, or other conditions. Place project-specific notices outside them. A new raw or generated dataset still requires the artifact-level review in [DATA_POLICY.md](DATA_POLICY.md).

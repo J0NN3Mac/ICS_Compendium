@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 J0NN3Mac and contributors.
+# SPDX-License-Identifier: Apache-2.0
+# See LICENSES/Apache-2.0.txt and NOTICE in the repository root.
 """Generate Markdown and CSV views from the catalog; no network or GitHub access."""
 from __future__ import annotations
 import argparse

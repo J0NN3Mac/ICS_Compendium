@@ -1,11 +1,9 @@
-# Licensing decisions and third-party material
+# Licensing and rights review
 
-**A project-wide license has not been selected in this bootstrap package.** The repository owner should choose licensing for original documentation, catalog metadata, software and authored training outputs before public release. This scaffold does not presume permission to replace an existing remote license.
+The project owner selected **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** for original educational content and catalog material, and **Apache License 2.0** for original software. The earlier bootstrap's pending-license statement is superseded by [LICENSE.md](LICENSE.md), which defines the scope and exclusions.
 
-Imported research summaries retain their source references and dated review boundaries. External projects and datasets retain their own terms; the rights table is a research record, not a permission grant from this project.
+Copyright remains with the respective rights holders. These licenses grant reuse permissions, including commercial reuse; they do not transfer ownership or establish ownership of employer-owned or third-party material. Contributors must have authority to license their submissions.
 
-No third-party source-code packages, packet datasets, standards documents or training PDFs are included. The workbook and CSV are the original research deliverables from this conversation, preserved without modification.
+Use [AUTHORS.md](AUTHORS.md) for credit, [NOTICE](NOTICE) for software attribution, and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for exclusions and source references.
 
-Review [rights and access](docs/reference/rights-and-access.md) and [release notes](docs/reference/release-notes.md) before any dataset acquisition or event distribution. Do not resolve conflicting notices by silently selecting a preferred interpretation.
-
-Owner decisions still required: project licensing, any third-party redistribution permissions, attribution bundle requirements, and licensing of clean self-generated scenario data. No maintainer or external owner was contacted by this import.
+External-resource access, privacy, redistribution, and generated-output reviews remain separate. The [rights table](docs/reference/rights-and-access.md) is a dated research record, not permission from this project or an external owner. This licensing change does not revalidate that table, obtain permissions, or clear any event dataset for distribution.
