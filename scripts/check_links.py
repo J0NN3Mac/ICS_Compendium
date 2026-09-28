@@ -5,7 +5,7 @@
 """Revalidate the capture download register with live HTTP checks.
 
 Fetches only the first 16 bytes of each address (HTTP Range), then compares status, total size
-and the capture magic number against catalog/capture-downloads.json. Nothing is written unless
+and the capture or archive magic number against catalog/capture-downloads.json. Nothing is written unless
 --update is given, in which case size, format, status and the checked date are refreshed for
 addresses that verified. Failures are reported and leave the record untouched.
 
@@ -26,7 +26,9 @@ MAGIC = {
     b'\xd4\xc3\xb2\xa1': 'pcap', b'\xa1\xb2\xc3\xd4': 'pcap',
     b'\x4d\x3c\xb2\xa1': 'pcap', b'\xa1\xb2\x3c\x4d': 'pcap',
     b'\x0a\x0d\x0d\x0a': 'pcapng',
+    b'\x50\x4b\x03\x04': 'zip', b'\x37\x7a\xbc\xaf': '7z',
 }
+GZIP = b'\x1f\x8b'
 
 def probe(url: str, timeout: float) -> dict:
     req = urllib.request.Request(url, headers={'Range': 'bytes=0-15', 'User-Agent': 'ICS-Compendium-link-check'})
@@ -36,7 +38,7 @@ def probe(url: str, timeout: float) -> dict:
         content_range = resp.headers.get('Content-Range', '')
         total = content_range.rsplit('/', 1)[-1] if '/' in content_range else resp.headers.get('Content-Length', '')
     return {'http_status': status, 'size_bytes': int(total) if total.isdigit() else None,
-            'detected_format': MAGIC.get(head[:4]), 'content_type': None}
+            'detected_format': MAGIC.get(head[:4]) or ('gzip' if head[:2] == GZIP else None), 'content_type': None}
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])

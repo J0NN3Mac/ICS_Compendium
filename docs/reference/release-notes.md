@@ -251,3 +251,120 @@ Sources: [source 1](https://csrc.nist.gov/pubs/sp/800/82/r3/final), [source 2](h
 
 Sources: [source 1](https://github.com/mitre-attack/attack-stix-data), [source 2](https://attack.mitre.org/resources/versions/)
 
+## ITI ICS-Security-Tools capture collection — master @ 9b826091e7 (2025-04-15)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | ITI ICS-Security-Tools capture collection |
+| Release / edition | master @ 9b826091e7 (2025-04-15) |
+| Data / event content | 378 protocol-organized captures plus test data |
+| PCAP status | Provided |
+| Critical handling note | Mixed provenance: parser test cases, conformance captures and lab traffic sit side by side |
+| Freeze recommendation | Pin commit; record folder of origin with each file used |
+
+Sources: [source 1](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
+
+## Lemay & Fernandez Modbus dataset (CSET 2016) — master @ e5b8ef596b (2023-03-31)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | Lemay & Fernandez Modbus dataset (CSET 2016) |
+| Release / edition | master @ e5b8ef596b (2023-03-31) |
+| Data / event content | 11 scenario captures plus 8 channel archives |
+| PCAP status | Provided |
+| Critical handling note | Archives named channel_*d_*s.zip were not inspected; contents unverified |
+| Freeze recommendation | Pin commit; hash each capture used |
+
+Sources: [source 1](https://github.com/antoine-lemay/Modbus_dataset)
+
+## gymgit S7comm client/PLC captures — master @ 88f35a601d (2016-06-10)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | gymgit S7comm client/PLC captures |
+| Release / edition | master @ 88f35a601d (2016-06-10) |
+| Data / event content | 21 S7comm engineering-session captures |
+| PCAP status | Provided |
+| Critical handling note | Addresses are rewritten; do not correlate to real assets |
+| Freeze recommendation | Pin commit |
+
+Sources: [source 1](https://github.com/gymgit/s7-pcaps)
+
+## EmreEkin ICS-Pcaps protocol sampler — master @ 0ffbf023af (2021-04-09)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | EmreEkin ICS-Pcaps protocol sampler |
+| Release / edition | master @ 0ffbf023af (2021-04-09) |
+| Data / event content | Protocol sampler, 241 usable files |
+| PCAP status | Provided (partial) |
+| Critical handling note | Seven DNP3 files are dead LFS pointers; four files are gzip-wrapped .pcap; IEEE802.11/iee802.11.pcap is a non-libpcap container |
+| Freeze recommendation | Pin commit; hash files used |
+
+Sources: [source 1](https://github.com/EmreEkin/ICS-Pcaps)
+
+## ICS CTF traffic (Modbus/TCP and S7comm) — master @ 86e93001bc (2018-08-09)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | ICS CTF traffic (Modbus/TCP and S7comm) |
+| Release / edition | master @ 86e93001bc (2018-08-09) |
+| Data / event content | Single CTF capture with solver scripts |
+| PCAP status | Provided |
+| Critical handling note | Contains challenge answers in scripts; separate from participant packages |
+| Freeze recommendation | Pin commit |
+
+Sources: [source 1](https://github.com/NewBee119/ctf_ics_traffic)
+
+## ControlThings ct-samples protocol captures — master @ 3a98ee2645 (2026-03-05)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | ControlThings ct-samples protocol captures |
+| Release / edition | master @ 3a98ee2645 (2026-03-05) |
+| Data / event content | 111 protocol samples incl. one 168 MB combined event capture |
+| PCAP status | Provided |
+| Critical handling note | Largest file is Git LFS; plain raw URL returns a pointer |
+| Freeze recommendation | Pin commit; record LFS object hash |
+
+Sources: [source 1](https://github.com/ControlThings-io/ct-samples/tree/master/Protocols)
+
+## Nozomi tricotools TRITON/TriStation capture — master @ 2f768c8209 (2019-01-21)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | Nozomi tricotools TRITON/TriStation capture |
+| Release / edition | master @ 2f768c8209 (2019-01-21) |
+| Data / event content | One TRITON execution capture plus tooling |
+| PCAP status | Provided |
+| Critical handling note | Malware protocol behavior; use in isolated environments only |
+| Freeze recommendation | Pin commit |
+
+Sources: [source 1](https://github.com/NozomiNetworks/tricotools)
+
+## University of Coimbra ICS_PCAPS MODBUSTCP#1 — GitHub release MODBUSTCP#1 (captures1_v2.zip, captures2.zip, captures3.zip)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | University of Coimbra ICS_PCAPS MODBUSTCP#1 |
+| Release / edition | GitHub release MODBUSTCP#1 (captures1_v2.zip, captures2.zip, captures3.zip) |
+| Data / event content | Flooding and DDoS scenarios against Modbus TCP testbed |
+| PCAP status | Provided (archived) |
+| Critical handling note | captures1_v2 contains __MACOSX resource-fork entries; unpacked size about 4.5 GB |
+| Freeze recommendation | Record release tag and archive SHA-256 |
+
+Sources: [source 1](https://github.com/tjcruz-dei/ICS_PCAPS/releases/tag/MODBUSTCP%231)
+
+## UOWM IEC 60870-5-104 Intrusion Detection Dataset — Zenodo record 7108614 (published 2022-09-23, modified 2024-07-16)
+
+| Field | Recorded content |
+| --- | --- |
+| Resource | UOWM IEC 60870-5-104 Intrusion Detection Dataset |
+| Release / edition | Zenodo record 7108614 (published 2022-09-23, modified 2024-07-16) |
+| Data / event content | 12 labelled IEC 104 attack scenarios with flow CSVs |
+| PCAP status | Provided (7z archives) |
+| Critical handling note | Each archive holds per-entity full and IEC104-only pcaps plus CSVs; requires a 7z extractor |
+| Freeze recommendation | Record DOI and per-archive MD5 (in record) |
+
+Sources: [source 1](https://zenodo.org/records/7108614)
+

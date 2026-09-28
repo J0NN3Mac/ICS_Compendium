@@ -196,3 +196,147 @@ Sources: [source 1](https://www.nist.gov/open/copyright-fair-use-and-licensing-s
 
 Sources: [source 1](https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/LICENSE.txt), [source 2](https://attack.mitre.org/resources/legal-and-branding/), [source 3](https://attack.mitre.org/resources/versions/)
 
+## R13 — ITI ICS-Security-Tools capture collection
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R13 |
+| Resource | ITI ICS-Security-Tools capture collection |
+| License / stated terms | CC BY 4.0 (repository LICENSE.md) |
+| Internal event sharing | Permitted with attribution |
+| Public redistribution | Permitted with attribution; identify changes; third-party-origin files keep their own credits |
+| Attribution / obligations | Credit ITI ICS-Security-Tools and link the repository; preserve folder README credits |
+| What the license covers | Repository contents as published; upstream captures re-hosted from other projects may have separate origins |
+| Clearance gate | Attribution / review |
+| Required next action | Pin commit 9b826091e7; review folder READMEs for third-party-origin captures before public redistribution |
+
+Sources: [source 1](https://raw.githubusercontent.com/ITI/ICS-Security-Tools/master/LICENSE.md)
+
+## R14 — Lemay & Fernandez Modbus dataset (CSET 2016)
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R14 |
+| Resource | Lemay & Fernandez Modbus dataset (CSET 2016) |
+| License / stated terms | No license file; citation requested |
+| Internal event sharing | Not established |
+| Public redistribution | Not established |
+| Attribution / obligations | Cite Lemay & Fernandez, CSET 2016 |
+| What the license covers | Nothing explicit |
+| Clearance gate | Permission required |
+| Required next action | Ask authors for training/redistribution permission; pin commit e5b8ef596b |
+
+Sources: [source 1](https://github.com/antoine-lemay/Modbus_dataset)
+
+## R15 — gymgit S7comm client/PLC captures
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R15 |
+| Resource | gymgit S7comm client/PLC captures |
+| License / stated terms | No license file; README: created for public use |
+| Internal event sharing | Contemplated by author statement |
+| Public redistribution | Contemplated but not a formal grant |
+| Attribution / obligations | Credit gymgit/s7-pcaps |
+| What the license covers | Author statement only |
+| Clearance gate | Attribution / review |
+| Required next action | Request explicit license or written confirmation; pin commit 88f35a601d |
+
+Sources: [source 1](https://github.com/gymgit/s7-pcaps)
+
+## R16 — EmreEkin ICS-Pcaps protocol sampler
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R16 |
+| Resource | EmreEkin ICS-Pcaps protocol sampler |
+| License / stated terms | No license file |
+| Internal event sharing | Not established |
+| Public redistribution | Not established |
+| Attribution / obligations | Unknown; credit repository |
+| What the license covers | Nothing explicit |
+| Clearance gate | Permission required |
+| Required next action | Identify origin of any file before reuse; prefer licensed duplicates in R13/R18 |
+
+Sources: [source 1](https://github.com/EmreEkin/ICS-Pcaps)
+
+## R17 — ICS CTF traffic (Modbus/TCP and S7comm)
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R17 |
+| Resource | ICS CTF traffic (Modbus/TCP and S7comm) |
+| License / stated terms | No license file |
+| Internal event sharing | Not established |
+| Public redistribution | Not established |
+| Attribution / obligations | Credit repository |
+| What the license covers | Nothing explicit |
+| Clearance gate | Permission required |
+| Required next action | Contact author; pin commit 86e93001bc |
+
+Sources: [source 1](https://github.com/NewBee119/ctf_ics_traffic)
+
+## R18 — ControlThings ct-samples protocol captures
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R18 |
+| Resource | ControlThings ct-samples protocol captures |
+| License / stated terms | GPL-3.0 (repository LICENSE) |
+| Internal event sharing | Permitted under GPL terms |
+| Public redistribution | Permitted under GPL terms with license text; data-file applicability ambiguous |
+| Attribution / obligations | Include GPL-3.0 text and credit ControlThings I/O |
+| What the license covers | Repository as published; third-party-origin captures (e.g. SANS event) may carry separate terms |
+| Clearance gate | Attribution / review |
+| Required next action | Ask ControlThings to confirm license intent for capture files; pin commit 3a98ee2645 |
+
+Sources: [source 1](https://raw.githubusercontent.com/ControlThings-io/ct-samples/master/LICENSE)
+
+## R19 — Nozomi tricotools TRITON/TriStation capture
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R19 |
+| Resource | Nozomi tricotools TRITON/TriStation capture |
+| License / stated terms | BSD-3-Clause |
+| Internal event sharing | Permitted with notice |
+| Public redistribution | Permitted with copyright notice and disclaimer |
+| Attribution / obligations | Retain Nozomi Networks copyright notice |
+| What the license covers | Repository contents |
+| Clearance gate | Attribution / review |
+| Required next action | Pin commit 2f768c8209; retain LICENSE alongside the capture |
+
+Sources: [source 1](https://raw.githubusercontent.com/NozomiNetworks/tricotools/master/LICENSE)
+
+## R20 — University of Coimbra ICS_PCAPS MODBUSTCP#1
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R20 |
+| Resource | University of Coimbra ICS_PCAPS MODBUSTCP#1 |
+| License / stated terms | No license file |
+| Internal event sharing | Not established |
+| Public redistribution | Not established |
+| Attribution / obligations | Credit University of Coimbra CyberSec (T. Cruz) |
+| What the license covers | Nothing explicit |
+| Clearance gate | Permission required |
+| Required next action | Contact maintainers for training/redistribution permission |
+
+Sources: [source 1](https://github.com/tjcruz-dei/ICS_PCAPS)
+
+## R21 — UOWM IEC 60870-5-104 Intrusion Detection Dataset
+
+| Field | Recorded content |
+| --- | --- |
+| ID | R21 |
+| Resource | UOWM IEC 60870-5-104 Intrusion Detection Dataset |
+| License / stated terms | CC BY 4.0 (Zenodo record) |
+| Internal event sharing | Permitted with attribution |
+| Public redistribution | Permitted with attribution and citation |
+| Attribution / obligations | Credit ITHACA / University of Western Macedonia; cite Radoglou-Grammatikis et al., IEEE TII 18(3), 2022 |
+| What the license covers | Zenodo record files |
+| Clearance gate | Attribution / review |
+| Required next action | Record DOI 10.21227/fj7s-f281 and archive MD5s with any derived exercise |
+
+Sources: [source 1](https://zenodo.org/records/7108614)
+
