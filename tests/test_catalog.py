@@ -1,3 +1,6 @@
+# Copyright (c) 2026 J0NN3Mac and contributors.
+# SPDX-License-Identifier: Apache-2.0
+# See LICENSES/Apache-2.0.txt and NOTICE in the repository root.
 """Regression tests for local structural safeguards, not upstream factual verification."""
 from pathlib import Path
 import json
@@ -41,6 +44,22 @@ class CatalogTests(unittest.TestCase):
         p=self.root/'data/snapshots/SCADA_Master_Dataset_Matrix_2026-09-27.csv'
         p.write_bytes(p.read_bytes()+b'\n')
         self.assertTrue(any('integrity mismatch' in e for e in validate(self.root)))
+    def alter_captures(self,fn):
+        p=self.root/'catalog/capture-downloads.json'
+        data=json.loads(p.read_text(encoding='utf-8'));fn(data)
+        p.write_text(json.dumps(data,ensure_ascii=False,indent=1)+'\n',encoding='utf-8')
+    def test_capture_unknown_resource_rejected(self):
+        self.alter_captures(lambda d:d['captures'][0].__setitem__('resource_id','R99'))
+        self.assertTrue(any('unknown resource' in e for e in validate(self.root)))
+    def test_capture_bad_format_rejected(self):
+        self.alter_captures(lambda d:d['captures'][0].__setitem__('detected_format','html'))
+        self.assertTrue(any('detected_format' in e for e in validate(self.root)))
+    def test_capture_duplicate_url_rejected(self):
+        self.alter_captures(lambda d:d['captures'].append(dict(d['captures'][0],capture_id='C99')))
+        self.assertTrue(any('Duplicate capture download URLs' in e for e in validate(self.root)))
+    def test_capture_failed_status_rejected(self):
+        self.alter_captures(lambda d:d['captures'][0].__setitem__('http_status',404))
+        self.assertTrue(any('not a success' in e for e in validate(self.root)))
     def test_broken_local_link_rejected(self):
         (self.root/'bad.md').write_text('[missing](does-not-exist.md)',encoding='utf-8')
         self.assertTrue(any('broken local link' in e for e in validate(self.root)))

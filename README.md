@@ -20,14 +20,15 @@ A curated resource for **Industrial Control System (ICS)** and **Supervisory Con
 | Build exercises | [Build plan](docs/reference/build-plan.md) and [scenario template](templates/scenario.md) |
 | Prioritize missing coverage | [Gap register](docs/reference/gap-register.md) and [roadmap](docs/roadmap.md) |
 | Locate original research | [Primary sources](docs/reference/sources.md) and [user-nominated seeds](docs/reference/seed-sources.md) |
+| Download published captures | [Capture download register](docs/reference/capture-downloads.md) (821 verified addresses across 13 resources; rights gates still apply) |
 | Understand terms | [Glossary](docs/reference/glossary.md) |
 | Import this package | [Import guide](IMPORT.md) |
 
 ## What is included
 
-Twelve resource families: **seven dataset/capture collections, three scenario-generation platforms, and two reference frameworks**. The catalog preserves all 25 original comparison fields, 30 primary-source records, ten user-nominated seed sources, twelve gaps, release-specific warnings, and proposed exercise tracks.
+Twenty-one resource families: **sixteen dataset/capture collections, three scenario-generation platforms, and two reference frameworks**. The original twelve (R01–R12) preserve all 25 comparison fields from the dated workbook; nine more (R13–R21, added 2026-09-28) were assessed from local verification of their published files. The catalog holds 43 primary-source records, ten user-nominated seed sources, twelve gaps, release-specific warnings, and proposed exercise tracks.
 
-This is a **metadata and training-design collection**, not a mirror of third-party datasets. No third-party packet captures, restricted time series, virtual-machine images, or malware files are bundled. Availability, protocol evidence, process truth, and redistribution clearance remain separate questions.
+This is a **metadata and training-design collection**, not a mirror of third-party datasets. The [capture download register](docs/reference/capture-downloads.md) records verified direct addresses for 821 published capture files and archives across thirteen resources, with size and format as observed on the check date; the files themselves stay with their hosts. No third-party packet captures, restricted time series, virtual-machine images, or malware files are bundled. Availability, protocol evidence, process truth, and redistribution clearance remain separate questions.
 
 ## Source of truth
 
@@ -46,6 +47,14 @@ The scripts use the Python standard library and do not access the network, downl
 
 ## Contribution and publication rules
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md), [the data policy](DATA_POLICY.md), and [licensing decisions](LICENSING.md). Keep uncertain fields explicit. Do not mark an event package cleared, a simulator operational, or a protocol observed without corresponding evidence.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [the data policy](DATA_POLICY.md), and [licensing and rights review](LICENSING.md). Keep uncertain fields explicit. Do not mark an event package cleared, a simulator operational, or a protocol observed without corresponding evidence.
 
 Analysis and replay are intended for offline inspection or isolated, authorized training environments—not production control networks.
+
+## License and credit
+
+Copyright (c) 2026 **J0NN3Mac and contributors**.
+
+Original educational content and catalog material are licensed under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**. Original software utilities and tests are licensed under **Apache License 2.0**. These are separate scopes, not interchangeable choices for every file.
+
+See [LICENSE.md](LICENSE.md) for exact scope and an attribution example, [AUTHORS.md](AUTHORS.md) for credit, [NOTICE](NOTICE) for software notices, and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for exclusions. External resources retain their own licenses and access restrictions. The project licenses do not clear third-party datasets for redistribution.

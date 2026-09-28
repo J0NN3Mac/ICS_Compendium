@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 J0NN3Mac and contributors.
+# SPDX-License-Identifier: Apache-2.0
+# See LICENSES/Apache-2.0.txt and NOTICE in the repository root.
 """Validate local catalog structure, references, snapshots and accidental binary inclusion."""
 from __future__ import annotations
 import csv
@@ -22,6 +25,7 @@ def validate(root: Path) -> list[str]:
         seeds=read('seed-sources.json')['sources']
         tables=read('supporting-tables.json')['tables']
         manifest=read('import-manifest.json')
+        captures=read('capture-downloads.json')['captures']
     except (OSError,ValueError,KeyError,TypeError) as exc:
         return [f'Cannot load catalog: {exc}']
     def date_ok(value,context):
@@ -86,6 +90,20 @@ def validate(root: Path) -> list[str]:
         if name in {'Protocol Coverage','Rights & Access'}:
             for row in rows:
                 if row.get('ID') not in resource_ids:errors.append(f'{name}: unknown resource {row.get("ID")}')
+    capture_ids=[]
+    capture_keys={'capture_id','resource_id','group','file','download_url','landing_page','host','size_bytes','detected_format','http_status','content_type','check_method','checked','note'}
+    for c in captures:
+        cid=c.get('capture_id','');capture_ids.append(cid)
+        if not re.fullmatch(r'C\d{2,}',cid):errors.append(f'Invalid capture ID: {cid}')
+        if set(c)!=capture_keys:errors.append(f'{cid}: capture record fields mismatch')
+        if c.get('resource_id') not in resource_ids:errors.append(f'{cid}: unknown resource {c.get("resource_id")}')
+        url_ok(c.get('download_url'),cid);url_ok(c.get('landing_page'),cid);date_ok(c.get('checked'),cid)
+        if c.get('detected_format') not in {'pcap','pcapng','zip','7z','gzip'}:errors.append(f'{cid}: detected_format must be pcap, pcapng, zip, 7z or gzip')
+        if not isinstance(c.get('size_bytes'),int) or c['size_bytes']<=0:errors.append(f'{cid}: size_bytes must be a positive integer')
+        if c.get('http_status') not in {200,206}:errors.append(f'{cid}: recorded HTTP status is not a success')
+        if not c.get('file'):errors.append(f'{cid}: missing file name')
+    if len(capture_ids)!=len(set(capture_ids)):errors.append('Duplicate capture IDs')
+    if len({c.get('download_url') for c in captures})!=len(captures):errors.append('Duplicate capture download URLs')
     for entry in manifest.get('snapshot_files',[]):
         path=(root/entry['path']).resolve()
         if not path.is_relative_to(root.resolve()):errors.append('Snapshot path escapes repository');continue
@@ -115,6 +133,6 @@ def main() -> int:
     except (OSError,ValueError,KeyError,TypeError) as exc:errors=[f'Validation failed: {exc}']
     if errors:
         print('\n'.join(errors));return 1
-    print('PASS: catalog fields, IDs, source references, dates, snapshot hashes, local links and metadata-only checks.');return 0
+    print('PASS: catalog fields, IDs, source references, capture register, dates, snapshot hashes, local links and metadata-only checks.');return 0
 
 if __name__=='__main__':raise SystemExit(main())
