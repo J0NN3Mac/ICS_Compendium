@@ -1,0 +1,25 @@
+# Local-only artifacts; metadata is tracked
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+local-data/
+private/
+raw-data/
+*.pcap
+*.pcapng
+*.cap
+*.har
+*.vmdk
+*.vdi
+*.qcow2
+*.ova
+*.iso
+*.zip
+*.7z
+*.tar
+*.tgz
+*.gz

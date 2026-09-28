@@ -1,0 +1,11 @@
+seed_id,title,url,proposed_role,status
+SEED01,ITI / ICS-Security-Tools packet capture index,https://github.com/ITI/ICS-Security-Tools/blob/master/pcaps/README.md,Discovery index,user_nominated_not_revalidated_in_this_import
+SEED02,Nozomi Networks / tricotools,https://github.com/NozomiNetworks/tricotools/blob/master/README.md,Safety-system research / tools,user_nominated_not_revalidated_in_this_import
+SEED03,rayborg / ICS_repo,https://github.com/rayborg/ICS_repo,Discovery index,user_nominated_not_revalidated_in_this_import
+SEED04,Robert M. Lee / Getting started in ICS/SCADA cybersecurity,https://www.robertmlee.org/a-collection-of-resources-for-getting-started-in-icsscada-cybersecurity/,Foundations / discovery,user_nominated_not_revalidated_in_this_import
+SEED05,Federal Emergency Management Agency training resource,https://training.fema.gov/emiweb/is/icsresource/trainingmaterials/,"Scope review required: prior conversation flagged Incident Command System, not Industrial Control System",user_nominated_not_revalidated_in_this_import
+SEED06,Cybersecurity and Infrastructure Security Agency training,https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa,Training,user_nominated_not_revalidated_in_this_import
+SEED07,Idaho National Laboratory training,https://inl.gov/national-security/ics-cybersecurity-training/,Training,user_nominated_not_revalidated_in_this_import
+SEED08,Rockwell Automation industrial cybersecurity,https://www.rockwellautomation.com/en-us/capabilities/industrial-cybersecurity.html,Vendor reference; advertising parameters removed from supplied address,user_nominated_not_revalidated_in_this_import
+SEED09,ProSoft Modbus TCP introduction,https://www.prosoft-technology.com/kb/assets/intro_modbustcp.pdf,Protocol reference,user_nominated_not_revalidated_in_this_import
+SEED10,CREATE SCADA curriculum modules,https://createenergy.org/scada-curriculum-modules/,Curriculum,user_nominated_not_revalidated_in_this_import

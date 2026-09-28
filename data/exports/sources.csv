@@ -1,0 +1,31 @@
+Source ID,Resource,Source type,Primary URL,Supports / limitations,Verified
+S01,GRFICSv3,Project README,https://github.com/Fortiphyd/GRFICSv3,"Containerized chemical-process lab, components, network layout and setup; documentation, not a runtime test.",2026-09-27
+S02,GRFICSv3,Modbus device configuration,https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/plc/mbconfig.cfg,"Six simulated process devices; Modbus TCP port 502; configured polling period 100 ms, not measured timing.",2026-09-27
+S03,GRFICSv3,Compose configuration,https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/docker-compose.yml,"Services, segmentation and exposed ports. Exposed ports are not proof of active protocol traffic.",2026-09-27
+S04,GRFICSv3,Repository license,https://raw.githubusercontent.com/Fortiphyd/GRFICSv3/main/LICENSE,GNU General Public License version 3; check bundled components separately.,2026-09-27
+S05,OpenPLC,Runtime v4 README,https://github.com/Autonomy-Logic/openplc-runtime,Standalone headless runtime v4; do not conflate with the legacy runtime bundled in other projects.,2026-09-27
+S06,OpenPLC,Plugin manifest,https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/plugins_default.conf,"Modbus master/slave, OPC UA, S7comm and EtherCAT plugin entries; configuration support, not inspected wire traffic.",2026-09-27
+S07,OpenPLC,Runtime license,https://raw.githubusercontent.com/Autonomy-Logic/openplc-runtime/main/LICENSE,"MIT license for this runtime repository; other versions, editor and dependencies may differ.",2026-09-27
+S08,Conpot,Project README,https://github.com/mushorg/conpot,Industrial endpoint honeypot; templates and deployment. Not a physics simulator.,2026-09-27
+S09,Conpot,Protocol documentation,https://conpot.readthedocs.io/en/latest/,Protocol implementations are template-dependent; no claim of full vendor stack fidelity.,2026-09-27
+S10,Conpot,Repository license,https://raw.githubusercontent.com/mushorg/conpot/main/LICENSE.txt,GNU General Public License version 2; source license does not automatically license all captured content.,2026-09-27
+S11,SWaT,Dataset characteristics,https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/swat/,Edition-specific network/process data and attack descriptions; A6 explicitly provides PCAP and historian CSV.,2026-09-27
+S12,SWaT,Physical testbed,https://www.sutd.edu.sg/itrust/swat/,"Six-stage physical plant, devices, diagrams and EtherNet/IP architecture.",2026-09-27
+S13,WADI,Dataset characteristics,https://www.sutd.edu.sg/itrust/itrust-labs/datasets/dataset-characteristics/wadi/,A1/A2 process data; A3 December 2023 synchronized PCAP and historian data without attacks.,2026-09-27
+S14,WADI,Physical testbed,https://www.sutd.edu.sg/itrust/wadi/,"Water distribution plant, industrial controllers, remote units, gateways, EtherNet/IP and Modbus architecture.",2026-09-27
+S15,SWaT / WADI,iTrust dataset terms,https://www.sutd.edu.sg/itrust/itrust-labs/datasets/terms-of-usage/,"No private or public onward sharing; credit, publication notification and requester disclosure requirements.",2026-09-27
+S16,SWaT / WADI,Release summary,https://www.sutd.edu.sg/itrust/itrust-labs/datasets/summary-of-available-datasets/,Additional SWaT 2026 releases listed; December 2023 SWaT identifier conflicts with characteristics page.,2026-09-27
+S17,HAI / HAIEnd,Dataset README and metadata,https://github.com/icsdataset/hai,"CSV time series, hardware-in-the-loop testbed, labels, versions, graphs; CC BY-SA 4.0 prose versus CC BY 4.0 metadata.",2026-09-27
+S18,IEC 61850,Dataset README and file tree,https://github.com/smartgridadsc/IEC61850SecurityDataset,"Synthesized GOOSE PCAPNG, per-device CSV and configuration; attack CSV reuses baseline. No explicit license found in reviewed tree.",2026-09-27
+S19,KNX,Dataset README,https://github.com/vgraveto/knx-datasets,Real-home KNX bus captures and contextual CSV; captured attacks merged into baseline with modified times; Target label includes responses.,2026-09-27
+S20,KNX,Repository license,https://raw.githubusercontent.com/vgraveto/knx-datasets/main/LICENSE,MIT license. External mirrors/package terms must be checked separately.,2026-09-27
+S21,4SICS,Host download / attribution page,https://www.netresec.com/?page=PCAP4SICS,"Three 2015 lab PCAPs, inventory and layout; credit CS3Sthlm and link Netresec for redistribution or training.",2026-09-27
+S22,S4x15,Host download page,https://www.netresec.com/?page=DigitalBond_S4,"Eight 2015 CTF PCAPs and network diagram. Hosting permission is described, but broad downstream redistribution grant not found.",2026-09-27
+S23,NIST SP 800-82,Revision 3 final,https://csrc.nist.gov/pubs/sp/800/82/r3/final,Stable final Operational Technology security guidance; not a packet dataset.,2026-09-27
+S24,NIST SP 800-82,Revision 4 initial public draft,https://csrc.nist.gov/pubs/sp/800/82/r4/ipd,"Draft released September 21, 2026; track separately from final guidance.",2026-09-27
+S25,NIST,Publication reuse policy,https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications,Technical-publication reuse policy; attribution and third-party material exceptions.,2026-09-27
+S26,MITRE ATT&CK for ICS,ICS matrix,https://attack.mitre.org/matrices/ics/,Behavior taxonomy and scenario mapping; not packet or process observations.,2026-09-27
+S27,MITRE ATT&CK,Structured data repository,https://github.com/mitre-attack/attack-stix-data,STIX 2.1 collections; version-pinned machine-readable knowledge base.,2026-09-27
+S28,MITRE ATT&CK,Data license,https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/LICENSE.txt,"Research, development and commercial reuse permitted subject to notices and license.",2026-09-27
+S29,MITRE ATT&CK,Versions,https://attack.mitre.org/resources/versions/,Current website version 19.2 at review; pin the exact ICS data release for an event.,2026-09-27
+S30,MITRE ATT&CK,Legal and branding,https://attack.mitre.org/resources/legal-and-branding/,Attribution and trademark guidance; do not imply endorsement.,2026-09-27

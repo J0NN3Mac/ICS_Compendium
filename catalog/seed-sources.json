@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "seed_id": "SEED01",
+      "title": "ITI / ICS-Security-Tools packet capture index",
+      "url": "https://github.com/ITI/ICS-Security-Tools/blob/master/pcaps/README.md",
+      "proposed_role": "Discovery index",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED02",
+      "title": "Nozomi Networks / tricotools",
+      "url": "https://github.com/NozomiNetworks/tricotools/blob/master/README.md",
+      "proposed_role": "Safety-system research / tools",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED03",
+      "title": "rayborg / ICS_repo",
+      "url": "https://github.com/rayborg/ICS_repo",
+      "proposed_role": "Discovery index",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED04",
+      "title": "Robert M. Lee / Getting started in ICS/SCADA cybersecurity",
+      "url": "https://www.robertmlee.org/a-collection-of-resources-for-getting-started-in-icsscada-cybersecurity/",
+      "proposed_role": "Foundations / discovery",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED05",
+      "title": "Federal Emergency Management Agency training resource",
+      "url": "https://training.fema.gov/emiweb/is/icsresource/trainingmaterials/",
+      "proposed_role": "Scope review required: prior conversation flagged Incident Command System, not Industrial Control System",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED06",
+      "title": "Cybersecurity and Infrastructure Security Agency training",
+      "url": "https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa",
+      "proposed_role": "Training",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED07",
+      "title": "Idaho National Laboratory training",
+      "url": "https://inl.gov/national-security/ics-cybersecurity-training/",
+      "proposed_role": "Training",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED08",
+      "title": "Rockwell Automation industrial cybersecurity",
+      "url": "https://www.rockwellautomation.com/en-us/capabilities/industrial-cybersecurity.html",
+      "proposed_role": "Vendor reference; advertising parameters removed from supplied address",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED09",
+      "title": "ProSoft Modbus TCP introduction",
+      "url": "https://www.prosoft-technology.com/kb/assets/intro_modbustcp.pdf",
+      "proposed_role": "Protocol reference",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    },
+    {
+      "seed_id": "SEED10",
+      "title": "CREATE SCADA curriculum modules",
+      "url": "https://createenergy.org/scada-curriculum-modules/",
+      "proposed_role": "Curriculum",
+      "status": "user_nominated_not_revalidated_in_this_import"
+    }
+  ]
+}
