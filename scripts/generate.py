@@ -108,9 +108,9 @@ def outputs(root: Path) -> dict[str, str]:
     caps = captures['captures']
     by_res = {r['resource_id']: r for r in resources}
     text = '# Capture download register\n\n' + generated
-    text += ('Direct addresses of the packet-capture files that the catalogued resources publish. '
+    text += ('Direct addresses of the packet-capture files and capture archives that the catalogued resources publish. '
              'Each address was located from the resource\'s own landing page or repository tree and checked with a ranged '
-             'HTTP GET of the first 16 bytes: the recorded status, total size and detected format come from that check. '
+             'HTTP GET of the first 16 bytes or by full download: the recorded status, total size and detected format come from that check. Archive entries (zip, 7z) and gzip-wrapped files must be unpacked to obtain captures. '
              'No capture is stored in this repository; see [DATA_POLICY.md](../../DATA_POLICY.md). Rerun `python3 scripts/check_links.py` '
              'to revalidate. A working link is not a redistribution permission: apply the gate in [rights and access](rights-and-access.md) '
              'before sharing any file onward.\n\n')

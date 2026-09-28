@@ -98,7 +98,7 @@ def validate(root: Path) -> list[str]:
         if set(c)!=capture_keys:errors.append(f'{cid}: capture record fields mismatch')
         if c.get('resource_id') not in resource_ids:errors.append(f'{cid}: unknown resource {c.get("resource_id")}')
         url_ok(c.get('download_url'),cid);url_ok(c.get('landing_page'),cid);date_ok(c.get('checked'),cid)
-        if c.get('detected_format') not in {'pcap','pcapng'}:errors.append(f'{cid}: detected_format must be pcap or pcapng')
+        if c.get('detected_format') not in {'pcap','pcapng','zip','7z','gzip'}:errors.append(f'{cid}: detected_format must be pcap, pcapng, zip, 7z or gzip')
         if not isinstance(c.get('size_bytes'),int) or c['size_bytes']<=0:errors.append(f'{cid}: size_bytes must be a positive integer')
         if c.get('http_status') not in {200,206}:errors.append(f'{cid}: recorded HTTP status is not a success')
         if not c.get('file'):errors.append(f'{cid}: missing file name')

@@ -20,6 +20,15 @@ Evidence codes are defined in [the glossary](glossary.md). No cell is a claim of
 | R10 | S4x15 | Unverified | Unverified | — | — | — | — | — | — | — | — | Named file | — | — |
 | R11 | NIST SP 800-82 | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference |
 | R12 | MITRE ATT&CK for ICS | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference | Reference |
+| R13 | ITI ICS-Security-Tools capture collection | Dataset | Dataset | Dataset | Dataset | Dataset | Dataset | — | Candidate | Candidate | Candidate | — | — | — |
+| R14 | Lemay & Fernandez Modbus dataset (CSET 2016) | Dataset | — | — | — | — | — | — | — | — | — | — | — | — |
+| R15 | gymgit S7comm client/PLC captures | — | — | Dataset | — | — | — | — | — | — | — | — | — | — |
+| R16 | EmreEkin ICS-Pcaps protocol sampler | Dataset | Dataset | Dataset | Dataset | Dataset | Dataset | — | Candidate | Candidate | Candidate | Dataset | — | — |
+| R17 | ICS CTF traffic (Modbus/TCP and S7comm) | Dataset | — | Dataset | — | — | — | — | — | — | — | — | — | — |
+| R18 | ControlThings ct-samples protocol captures | Dataset | — | Dataset | — | Dataset | Dataset | — | Candidate | Candidate | Candidate | Dataset | — | — |
+| R19 | Nozomi tricotools TRITON/TriStation capture | — | — | — | — | — | — | — | — | — | — | — | — | — |
+| R20 | University of Coimbra ICS_PCAPS MODBUSTCP#1 | Dataset | — | — | — | — | — | — | — | — | — | — | — | — |
+| R21 | UOWM IEC 60870-5-104 Intrusion Detection Dataset | — | — | — | — | — | Dataset | — | — | — | — | — | — | — |
 
 ## Interpretation by resource
 
@@ -94,4 +103,58 @@ Sources: [source 1](https://csrc.nist.gov/pubs/sp/800/82/r3/final), [source 2](h
 Taxonomy does not constitute protocol traffic, implementation support or observed event labels.
 
 Sources: [source 1](https://attack.mitre.org/matrices/ics/), [source 2](https://github.com/mitre-attack/attack-stix-data)
+
+### R13 — ITI ICS-Security-Tools capture collection
+
+Protocol columns reflect folder labels; the IEC 61850 folder is not split by GOOSE/MMS/SV so those remain Candidate. No packet-level decode performed by this catalog.
+
+Sources: [source 1](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
+
+### R14 — Lemay & Fernandez Modbus dataset (CSET 2016)
+
+Modbus TCP explicitly documented; exploitation traffic is IT-side. No decode performed by this catalog.
+
+Sources: [source 1](https://github.com/antoine-lemay/Modbus_dataset)
+
+### R15 — gymgit S7comm client/PLC captures
+
+S7comm explicitly documented per file. No decode performed by this catalog.
+
+Sources: [source 1](https://github.com/gymgit/s7-pcaps)
+
+### R16 — EmreEkin ICS-Pcaps protocol sampler
+
+Folder labels only; no origin documentation. Treat as samples, not a dataset with provenance.
+
+Sources: [source 1](https://github.com/EmreEkin/ICS-Pcaps)
+
+### R17 — ICS CTF traffic (Modbus/TCP and S7comm)
+
+Modbus/TCP and S7comm per README. No decode performed by this catalog.
+
+Sources: [source 1](https://github.com/NewBee119/ctf_ics_traffic)
+
+### R18 — ControlThings ct-samples protocol captures
+
+Folder labels; IEC 61850 not split by service. No decode performed by this catalog.
+
+Sources: [source 1](https://github.com/ControlThings-io/ct-samples/tree/master/Protocols)
+
+### R19 — Nozomi tricotools TRITON/TriStation capture
+
+TriStation is outside the matrix protocol columns; recorded in Protocol coverage text. No decode performed by this catalog.
+
+Sources: [source 1](https://github.com/NozomiNetworks/tricotools)
+
+### R20 — University of Coimbra ICS_PCAPS MODBUSTCP#1
+
+Modbus TCP per release name and folders. Inner files not decoded or individually hashed by this catalog.
+
+Sources: [source 1](https://github.com/tjcruz-dei/ICS_PCAPS/releases/tag/MODBUSTCP%231)
+
+### R21 — UOWM IEC 60870-5-104 Intrusion Detection Dataset
+
+IEC 104 explicitly documented with per-command attack classes. Inner pcaps not decoded by this catalog.
+
+Sources: [source 1](https://zenodo.org/records/7108614)
 

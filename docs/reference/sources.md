@@ -304,3 +304,133 @@ Current website version 19.2 at review; pin the exact ICS data release for an ev
 
 Attribution and trademark guidance; do not imply endorsement.
 
+## S31
+
+**Resource:** ITI ICS-Security-Tools capture collection  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/ITI/ICS-Security-Tools/tree/master/pcaps)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S32
+
+**Resource:** ITI ICS-Security-Tools capture collection  
+**Source type:** License file  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://raw.githubusercontent.com/ITI/ICS-Security-Tools/master/LICENSE.md)
+
+License text as published; applicability to capture data noted in rights table.
+
+## S33
+
+**Resource:** Lemay & Fernandez Modbus dataset (CSET 2016)  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/antoine-lemay/Modbus_dataset)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S34
+
+**Resource:** gymgit S7comm client/PLC captures  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/gymgit/s7-pcaps)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S35
+
+**Resource:** EmreEkin ICS-Pcaps protocol sampler  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/EmreEkin/ICS-Pcaps)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S36
+
+**Resource:** ICS CTF traffic (Modbus/TCP and S7comm)  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/NewBee119/ctf_ics_traffic)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S37
+
+**Resource:** ControlThings ct-samples protocol captures  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/ControlThings-io/ct-samples/tree/master/Protocols)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S38
+
+**Resource:** ControlThings ct-samples protocol captures  
+**Source type:** License file  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://raw.githubusercontent.com/ControlThings-io/ct-samples/master/LICENSE)
+
+License text as published; applicability to capture data noted in rights table.
+
+## S39
+
+**Resource:** Nozomi tricotools TRITON/TriStation capture  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/NozomiNetworks/tricotools)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S40
+
+**Resource:** Nozomi tricotools TRITON/TriStation capture  
+**Source type:** License file  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://raw.githubusercontent.com/NozomiNetworks/tricotools/master/LICENSE)
+
+License text as published; applicability to capture data noted in rights table.
+
+## S41
+
+**Resource:** University of Coimbra ICS_PCAPS MODBUSTCP#1  
+**Source type:** Release page  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/tjcruz-dei/ICS_PCAPS/releases/tag/MODBUSTCP%231)
+
+Release assets and sizes; no license statement.
+
+## S42
+
+**Resource:** University of Coimbra ICS_PCAPS MODBUSTCP#1  
+**Source type:** Project repository  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://github.com/tjcruz-dei/ICS_PCAPS)
+
+README and tree inspected; file counts and formats verified locally on 2026-09-28.
+
+## S43
+
+**Resource:** UOWM IEC 60870-5-104 Intrusion Detection Dataset  
+**Source type:** Dataset record  
+**Inherited review date:** 2026-09-28
+
+[Open original source](https://zenodo.org/records/7108614)
+
+Zenodo record with file list, MD5 checksums and license field.
+
